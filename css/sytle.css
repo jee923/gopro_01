@@ -1,0 +1,1209 @@
+body {
+  background: var(--bg-black01);
+}
+
+/* HEADER */
+
+header {
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: transparent;
+  z-index: 9999;
+}
+
+.gnb {
+  width: 1840px;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Section01 : Intro Video */
+
+.section01 {
+  width: 1920px;
+  height: 1080px;
+  margin: auto;
+  background: var(--test-color);
+}
+
+.section01_container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.section01 video {
+  width: 100%;
+}
+
+.section01 .intro-logo {
+  position: absolute;
+  left: 900px;
+  top: 901px;
+}
+
+.section01 .down-arrow {
+  position: absolute;
+  left: 950px;
+  top: 957px;
+}
+
+/* Section02 : Brand-Main */
+
+.section02 {
+  width: 1920px;
+  height: 1020px;
+  margin: auto;
+  /* background: var(--test-color); */
+}
+
+.section02_container {
+  width: 100%;
+  height: 1020px;
+  position: relative;
+  overflow: hidden;
+}
+
+.section02 .surfing {
+  position: absolute;
+  left: 472px;
+  top: 92px;
+  /* font-family: "Druk Wide Trial", sans-serif;
+  font-size: 12rem;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: right; */
+}
+
+.section02 .frame {
+  position: absolute;
+  left: 40px;
+  top: 100px;
+}
+
+.section02 .does {
+  position: absolute;
+  left: 276px;
+  top: 473px;
+}
+
+.section02 .only {
+  position: absolute;
+  left: 638px;
+  top: 473px;
+}
+
+.section02 .video-wrapper {
+  width: 723px;
+  height: 545px;
+  overflow: hidden;
+  border-radius: 1rem;
+  position: absolute;
+  left: 947px;
+  top: 184px;
+}
+
+.section02 .video-wrapper video {
+  width: 100%;
+  border-radius: 1.25rem;
+  mix-blend-mode: lighten;
+}
+
+.section02 .gopro {
+  position: absolute;
+  left: 355px;
+  top: 565px;
+}
+
+.section02 .years {
+  position: absolute;
+  left: 365px;
+  top: 719px;
+}
+
+.section02 .cando {
+  position: absolute;
+  left: 764px;
+  top: 691px;
+}
+
+/* Section03 : Brand-Detail */
+
+.section03 {
+  width: 1920px;
+  height: 1940px;
+  margin: auto;
+  /* background: var(--test-color); */
+}
+
+.section03_container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.section03 .grid {
+  width: 100%;
+  position: relative;
+}
+
+.section03 .turned-line img {
+  position: absolute;
+  left: 1172px;
+  top: 316px;
+}
+
+.section03 .sharing {
+  position: absolute;
+  left: 326px;
+  top: 277px;
+}
+
+.section03 .exper {
+  position: absolute;
+  left: 193px;
+  top: 390px;
+}
+
+.section03 .world {
+  position: absolute;
+  left: 353px;
+  top: 518px;
+}
+
+.section03 .here {
+  position: absolute;
+  left: 329px;
+  top: 633px;
+}
+
+.section03 .you {
+  position: absolute;
+  left: 1128px;
+  top: 196px;
+}
+
+.section03 .around {
+  position: absolute;
+  left: 171px;
+  top: 544px;
+}
+
+/* Below Contents */
+
+.section03 .founded {
+  position: absolute;
+  left: 448px;
+  top: 1094px;
+}
+
+.section03 .we {
+  position: absolute;
+  left: 1128px;
+  top: 1560px;
+}
+
+.section03 .force {
+  position: absolute;
+  left: 764px;
+  top: 1320px;
+}
+
+.section03 .posit {
+  position: absolute;
+  left: 654px;
+  top: 1409px;
+}
+
+.section03 .for {
+  position: absolute;
+  left: 1025px;
+  top: 1537px;
+}
+
+/* Section04 : Cam-Intro-Video */
+.section04 {
+  width: 1920px;
+  height: 1080px;
+  margin: auto;
+  background: var(--test-color);
+}
+
+.section04_container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.section04 video {
+  width: 100%;
+}
+
+/* Section05 : Cam-Main */
+.section05 {
+  width: 1920px;
+  height: 1020px;
+  margin: auto;
+  /* background: var(--test-color); */
+}
+
+.section05_container {
+  width: 100%;
+  height: 1020px;
+  position: relative;
+  overflow: hidden;
+}
+
+.section05 .grid {
+  width: 100%;
+  position: relative;
+}
+
+.section05 .frame {
+  position: absolute;
+  left: 40px;
+  top: 100px;
+}
+
+.section05 .photo01 {
+  position: absolute;
+  left: 240px;
+  top: 135px;
+}
+
+.section05 .photo02 {
+  position: absolute;
+  left: 761px;
+  top: 203px;
+}
+
+.section05 .black {
+  position: absolute;
+  left: 1251px;
+  top: 561px;
+}
+
+.section05 .hero {
+  position: absolute;
+  left: 952px;
+  top: 627px;
+}
+
+.section05 .offi {
+  position: absolute;
+  left: 1128px;
+  top: 714px;
+}
+
+.section05 .of {
+  position: absolute;
+  left: 1535px;
+  top: 754px;
+}
+
+.section05 .fun {
+  position: absolute;
+  left: 1600px;
+  top: 711px;
+}
+
+/* Section06 : Cam-Detail-01 (Horizon) */
+
+.section06 {
+  width: 1920px;
+  height: 1020px;
+  margin: auto;
+  background: var(--test-color);
+}
+
+.section06_container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Section07 : Cam-Detail-02 : LargerSensor*/
+.section07 {
+  width: 1920px;
+  height: 2750px;
+  margin: auto;
+  /* background: var(--test-color); */
+}
+
+.section07_container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.section07 .bg {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 26px;
+}
+
+.section07 .frame {
+  position: absolute;
+  left: 40px;
+  top: 100px;
+}
+
+.section07 .larger {
+  position: absolute;
+  left: 593px;
+  top: 188px;
+}
+
+.section07 .sensor {
+  position: absolute;
+  left: 677px;
+  top: 266px;
+}
+
+.section07 .field {
+  position: absolute;
+  left: 646px;
+  top: 572px;
+}
+
+.section07 .the {
+  position: absolute;
+  left: 582px;
+  top: 746px;
+}
+
+.section07 .shoot {
+  position: absolute;
+  left: 522px;
+  top: 963px;
+}
+
+.section07 .with {
+  position: absolute;
+  left: 520px;
+  top: 1137px;
+}
+
+.section07 .ultra {
+  position: absolute;
+  left: 635px;
+  top: 1490px;
+}
+
+.section07 .hyper {
+  position: absolute;
+  left: 633px;
+  top: 1663px;
+}
+
+.section07 .lets {
+  position: absolute;
+  left: 525px;
+  top: 2003px;
+}
+
+.section07 .do {
+  position: absolute;
+  left: 781px;
+  top: 2087px;
+}
+
+.section07 .video-wrapper {
+  width: 564px;
+  height: 397px;
+  overflow: hidden;
+  border-radius: 1rem;
+  position: absolute;
+  left: 678px;
+  top: 326px;
+}
+
+.section07 .video-wrapper video {
+  width: 100%;
+  /* mix-blend-mode: lighten; */
+}
+
+/* Section08 : Cam-Detail-03 : ProLevel */
+.section08 {
+  width: 1920px;
+  height: 1940px;
+  margin: auto;
+  /* background: var(--test-color); */
+}
+
+.section08_container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.section08 .bg01 {
+  width: 1400px;
+  height: 841px;
+  position: absolute;
+  left: 585px;
+  top: -52px;
+}
+
+.section08 .bg02 {
+  width: 1604px;
+  height: 835px;
+  position: absolute;
+  left: 190px;
+  top: 650px;
+}
+
+.section08 .pro {
+  position: absolute;
+  left: 193px;
+  top: 257px;
+}
+
+.section08 .level {
+  position: absolute;
+  left: 190px;
+  top: 406px;
+}
+
+.section08 .img01 {
+  position: absolute;
+  left: 1125px;
+  top: 301px;
+}
+
+.section08 .stun {
+  position: absolute;
+  left: 1124px;
+  top: 536px;
+}
+
+.section08 .photo {
+  position: absolute;
+  left: 1125px;
+  top: 569px;
+}
+
+.section08 .grab {
+  position: absolute;
+  left: 1125px;
+  top: 601px;
+}
+
+.section08 .new {
+  position: absolute;
+  left: 192px;
+  top: 793px;
+}
+
+.section08 .time {
+  position: absolute;
+  left: 195px;
+  top: 826px;
+}
+
+.section08 .img02 {
+  position: absolute;
+  left: px;
+  top: px;
+}
+
+.section08 .video-wrapper {
+  width: 445px;
+  height: 335px;
+  overflow: hidden;
+  border-radius: 1rem;
+  position: absolute;
+  left: 193px;
+  top: 864px;
+}
+
+.section08 .video-wrapper video {
+  width: 100%;
+}
+
+.section08 .bit {
+  position: absolute;
+  left: 355px;
+  top: 1589px;
+}
+
+.section08 .blue {
+  position: absolute;
+  left: 0px;
+  top: 1702px;
+}
+
+.section08 .img02 {
+  position: absolute;
+  left: 815px;
+  top: 1336px;
+}
+
+.section08 .bit-stroke {
+  position: absolute;
+  left: 355px;
+  top: 1589px;
+}
+
+.section08 .blue-stroke {
+  position: absolute;
+  left: 0px;
+  top: 1702px;
+}
+
+/* Section09 : Cam-Detail-04 : NailShot */
+.section09 {
+  width: 1920px;
+  height: 1020px;
+  margin: auto;
+  /* background: var(--test-color); */
+}
+
+.section09_container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.section09 .bg {
+  position: absolute;
+  left: 85px;
+  top: 115px;
+}
+
+.section09 .nail {
+  position: absolute;
+  left: 1127px;
+  top: 700px;
+}
+
+.section09 .with {
+  position: absolute;
+  left: 1123px;
+  top: 770px;
+}
+
+.section09 .hind {
+  position: absolute;
+  left: 1126px;
+  top: 858px;
+}
+
+.section09 .img01 {
+  position: absolute;
+  left: 1376px;
+  top: 271px;
+}
+
+.section09 .img02 {
+  position: absolute;
+  left: 1005px;
+  top: 512px;
+}
+
+.section09 .img03 {
+  position: absolute;
+  left: 378px;
+  top: 227px;
+}
+
+.section09 .img04 {
+  position: absolute;
+  left: 557px;
+  top: 726px;
+}
+
+/* Section10 : Cam-Detail-05 : NightEffects */
+.section10 {
+  width: 1920px;
+  height: 1020px;
+  margin: auto;
+  background: var(--bg-black02);
+}
+
+.section10_container {
+  width: 100%;
+  height: 1020px;
+  position: relative;
+  overflow: hidden;
+}
+
+.section10 .frame {
+  position: absolute;
+  left: 40px;
+  top: 100px;
+}
+
+.section10 .night {
+  position: absolute;
+  left: 330px;
+  top: 348px;
+}
+
+.section10 .img01 {
+  position: absolute;
+  left: 785px;
+  top: 345px;
+}
+
+.section10 .push {
+  position: absolute;
+  left: 323px;
+  top: 485px;
+}
+
+.section10 .button {
+  position: absolute;
+  left: 323px;
+  top: 616px;
+}
+
+.section10 .img02 {
+  position: absolute;
+  left: 1225px;
+  top: 488px;
+}
+
+.section10 .star {
+  position: absolute;
+  left: 1210px;
+  top: 617px;
+}
+
+.section10 .img03 {
+  position: absolute;
+  left: 447px;
+  top: 617px;
+}
+
+/* Section11 : Lens-Intro-Video */
+
+.section11 {
+  width: 1920px;
+  height: 1080px;
+  margin: auto;
+  background: var(--test-color);
+}
+
+.section11_container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.section11 video {
+  width: 100%;
+}
+
+/* Section12 : Lens-Main */
+.section12 {
+  width: 1920px;
+  height: 1020px;
+  margin: auto;
+  /* background: var(--test-color); */
+}
+
+.section12_container {
+  width: 100%;
+  height: 1020px;
+  position: relative;
+  overflow: hidden;
+}
+
+.section12 .grid {
+  width: 100%;
+  position: relative;
+}
+
+.section12 .frame {
+  position: absolute;
+  left: 40px;
+  top: 100px;
+}
+
+.section12 .img01 {
+  position: absolute;
+  left: 1152px;
+  top: 257px;
+}
+
+.section12 .img02 {
+  position: absolute;
+  left: 316px;
+  top: 649px;
+}
+
+.section12 .upgrade {
+  position: absolute;
+  left: 477px;
+  top: 442px;
+}
+
+.section12 .for {
+  position: absolute;
+  left: 649px;
+  top: 405px;
+}
+
+.section12 .max {
+  position: absolute;
+  left: 334px;
+  top: 526px;
+}
+
+.section12 .mod {
+  position: absolute;
+  left: 462px;
+  top: 626px;
+}
+
+.section12 .pov {
+  position: absolute;
+  left: 690px;
+  top: 431px;
+}
+
+/* Section13 : Lens-Detail-01 : Wide4K */
+.section13 {
+  width: 1920px;
+  height: 1020px;
+  margin: auto;
+  /* background: var(--test-color); */
+}
+
+.section13_container {
+  width: 100%;
+  height: 1020px;
+  position: relative;
+  overflow: hidden;
+}
+
+.section13 .grid {
+  width: 100%;
+  position: relative;
+}
+
+.section13 .frame {
+  position: absolute;
+  left: 40px;
+  top: 100px;
+}
+
+.section13 .img01 {
+  position: absolute;
+  left: 435px;
+  top: 300px;
+}
+
+.section13 .wide {
+  position: absolute;
+  left: 1349px;
+  top: 424px;
+}
+
+.section13 .ang {
+  position: absolute;
+  left: 1127px;
+  top: 487px;
+}
+
+.section13 .ultra {
+  position: absolute;
+  left: 1244px;
+  top: 412px;
+}
+
+.section13 .four {
+  position: absolute;
+  left: 1469px;
+  top: 542px;
+}
+
+.section13 .in {
+  position: absolute;
+  left: 1437px;
+  top: 543px;
+}
+
+/* Section14 : Lens-Detail-02 (Horizon) */
+.section14 {
+  width: 1920px;
+  height: 1020px;
+  margin: auto;
+  /* background: var(--test-color); */
+}
+
+.section14_container {
+  width: 100%;
+  height: 1020px;
+  position: relative;
+  overflow: hidden;
+}
+
+.section14 .grid {
+  width: 100%;
+  position: relative;
+}
+
+.section14 .frame {
+  position: absolute;
+  left: 40px;
+  top: 100px;
+}
+
+.section14 .img03 {
+  position: absolute;
+  left: 80px;
+  top: 141px;
+}
+
+.section14 .wide {
+  position: absolute;
+  left: 1482px;
+  top: 424px;
+}
+
+.section14 .ang {
+  position: absolute;
+  left: 1260px;
+  top: 487px;
+}
+
+.section14 .ultra {
+  position: absolute;
+  left: 1377px;
+  top: 412px;
+}
+
+.section14 .four {
+  position: absolute;
+  left: 1602px;
+  top: 542px;
+}
+
+.section14 .in {
+  position: absolute;
+  left: 1570px;
+  top: 543px;
+}
+
+/* Section15 : Lens-Detail-03 : Vertical (Horizon) */
+.section15 {
+  width: 1920px;
+  height: 1020px;
+  margin: auto;
+  /* background: var(--test-color); */
+}
+
+.section15_container {
+  width: 100%;
+  height: 1020px;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.section15 .grid {
+  width: 100%;
+  position: relative;
+}
+
+.section15 .frame {
+  position: absolute;
+  left: 40px;
+  top: 100px;
+}
+
+/* S15-1 : Vertical Capture */
+
+.section15 .video-wrapper01 {
+  width: 500px;
+  height: 355px;
+  overflow: hidden;
+  border-radius: 1rem;
+  position: absolute;
+  left: 331px;
+  top: 226px;
+}
+
+.section15 .video-wrapper01 video {
+  width: 100%;
+  /* mix-blend-mode: lighten; */
+}
+
+.section15 .vertical {
+  position: absolute;
+  left: 214px;
+  top: 205px;
+}
+
+.section15 .capture {
+  position: absolute;
+  left: 267px;
+  top: 157px;
+}
+
+.section15 .for {
+  position: absolute;
+  left: 271px;
+  top: 596px;
+}
+
+.section15 .social {
+  position: absolute;
+  left: 300px;
+  top: 561px;
+}
+
+/* S15-2 HorizonLock */
+.section15 .video-wrapper02 {
+  width: 441px;
+  height: 332px;
+  overflow: hidden;
+  border-radius: 1rem;
+  position: absolute;
+  left: 1297px;
+  top: 570px;
+}
+
+.section15 .video-wrapper02 video {
+  width: 100%;
+  /* mix-blend-mode: lighten; */
+}
+
+.section15 .unb {
+  position: absolute;
+  left: 963px;
+  top: 165px;
+}
+
+.section15 .stab {
+  position: absolute;
+  left: 1109px;
+  top: 339px;
+}
+
+.section15 .truly {
+  position: absolute;
+  left: 926px;
+  top: 533px;
+}
+
+.section15 .horizon {
+  position: absolute;
+  left: 1020px;
+  top: 846px;
+}
+
+.section15 .lock {
+  position: absolute;
+  left: 1021px;
+  top: 879px;
+}
+
+/* S15-3 TimeWarp */
+
+.section15 .video-wrapper03 {
+  width: 441px;
+  height: 332px;
+  overflow: hidden;
+  border-radius: 1rem;
+  position: absolute;
+  left: 2000px;
+  top: 238px;
+}
+
+.section15 .video-wrapper03 video {
+  width: 100%;
+  /* mix-blend-mode: lighten; */
+}
+
+.section15 .warp {
+  position: absolute;
+  left: 2000px;
+  top: 590px;
+}
+
+.section15 .photo {
+  position: absolute;
+  left: 2000px;
+  top: 630px;
+}
+
+/* Section15-1 : Lens-Detail-03 : Vertical (Horizon END) */
+.section15 {
+  width: 1920px;
+  height: 1020px;
+  margin: auto;
+  /* background: var(--test-color); */
+}
+
+.section15_container {
+  width: 100%;
+  height: 1020px;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.section15 .grid {
+  width: 100%;
+  position: relative;
+}
+
+.section15 .frame {
+  position: absolute;
+  left: 40px;
+  top: 100px;
+}
+
+/* Section16 : Lens-Detail-03 : Vertical (Horizon END) */
+
+.section16 {
+  width: 1920px;
+  height: 1020px;
+  margin: auto;
+  /* background: var(--test-color); */
+}
+
+.section16_container {
+  width: 100%;
+  height: 1020px;
+  position: relative;
+  overflow: hidden;
+}
+
+.section16 .grid {
+  width: 100%;
+  position: relative;
+}
+
+.section16 .frame {
+  position: absolute;
+  left: 40px;
+  top: 100px;
+}
+
+.section16 .video-wrapper {
+  width: 1500px;
+  height: 800px;
+  overflow: hidden;
+  position: absolute;
+  left: 210px;
+  top: 126px;
+}
+
+.section16 .video-wrapper video {
+  width: 100%;
+  /* mix-blend-mode: lighten; */
+}
+
+.section16 .k601 {
+  position: absolute;
+  left: 657px;
+  top: 312px;
+}
+
+.section16 .k601-stroke {
+  position: absolute;
+  left: 654px;
+  top: 383px;
+}
+
+.section16 .k602 {
+  position: absolute;
+  left: 657px;
+  top: 457px;
+}
+
+.section16 .k602-stroke {
+  position: absolute;
+  left: 654px;
+  top: 527px;
+}
+
+.section16 .k603 {
+  position: absolute;
+  left: 657px;
+  top: 602px;
+}
+
+.section16 .k603-stroke {
+  position: absolute;
+  left: 654px;
+  top: 672px;
+}
+
+/* Section17 : Lens-Detail-04 : Smaller */
+
+.section17 {
+  width: 1920px;
+  height: 1020px;
+  margin: auto;
+  /* background: var(--test-color); */
+}
+
+.section17_container {
+  width: 100%;
+  height: 1020px;
+  position: relative;
+  overflow: hidden;
+}
+
+.section17 .grid {
+  width: 100%;
+  position: relative;
+}
+
+.section17 .frame {
+  position: absolute;
+  left: 40px;
+  top: 100px;
+}
+
+.section17 .video-wrapper {
+  width: 706px;
+  height: 532px;
+  overflow: hidden;
+  position: absolute;
+  left: 1005px;
+  top: 234px;
+}
+
+.section17 .video-wrapper video {
+  width: 100%;
+  border-radius: 1.5rem;
+  mix-blend-mode: lighten;
+}
+
+.section17 .smaller {
+  position: absolute;
+  left: 250px;
+  top: 305px;
+}
+
+.section17 .lighter {
+  position: absolute;
+  left: 249px;
+  top: 481px;
+}
+
+.section17 .tougher {
+  position: absolute;
+  left: 255px;
+  top: 657px;
+}

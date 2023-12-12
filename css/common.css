@@ -1,0 +1,29 @@
+/* FONT CDN */
+@import url("https://fonts.cdnfonts.com/css/druk-wide-trial");
+@import url("https://fonts.cdnfonts.com/css/strong-attraction");
+
+/* font-family: 'Druk Wide Trial', sans-serif; */
+/* font-family: 'Strong Attraction', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+/* Root Style Guide */
+:root {
+  /* COLOR */
+  --bg-black01: #0e0e0e;
+  --bg-black02: #000;
+
+  --test-color: #689d65;
+}
