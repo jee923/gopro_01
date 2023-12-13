@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GoPro</title>
+
+    <!-- Remix Icon CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css" integrity="sha512-/VYneElp5u4puMaIp/4ibGxlTd2MV3kuUIroR3NSQjS2h9XKQNebRQiyyoQKeiGE9mRdjSCIZf9pb7AVJ8DhCg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  
     <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/sytle.css" />
   </head>
 
@@ -36,11 +42,13 @@
         <div class="surfing"><img src="img/s2-surfing.svg" alt="" /></div>
         <div class="frame"><img src="img/frame01.svg" alt="" /></div>
         <div class="does"><img src="img/s2-does.svg" alt="" /></div>
-        <div class="only"><img src="img/s2-only.png" alt="" /></div>
+        <div class="only"><img src="img/s2-only.svg" alt="" /></div>
         <div class="video-wrapper">
           <video src="video/s2-video01.mp4" autoplay muted loop></video>
         </div>
-        <div class="gopro"><img src="img/s2-gopro.svg" alt="" /></div>
+        <svg id="s2-gopro" width="839" height="129" viewBox="0 0 839 129" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M78.9614 126.08H75.7614C19.1214 126.08 3.44141 95.1999 3.44141 71.0399C3.44141 67.1999 3.60141 63.8399 4.24141 59.5199C7.60141 36.3199 22.4814 2.87988 89.0414 2.87988H94.0014C158.961 2.87988 168.721 31.9999 167.761 48.1599H129.361C128.881 45.2799 126.481 31.1999 90.6414 31.1999C55.6014 31.1999 44.4014 46.7199 42.3214 61.9199C42.0014 64.3199 41.8414 65.9199 41.8414 68.1599C41.8414 83.6799 52.7214 97.1199 82.0014 97.1199C115.121 97.1199 127.601 83.9999 128.561 79.8399H82.8014L86.3214 57.2799H167.761L157.201 124H135.441C135.601 119.52 135.281 110.24 134.001 105.12C128.721 111.36 112.721 126.08 78.9614 126.08ZM254.643 126.08C189.843 126.08 176.723 94.5599 176.723 73.2799C176.723 69.5999 176.723 65.5999 177.523 59.8399C180.403 40.3199 190.323 2.87988 263.603 2.87988H270.483C334.803 2.87988 348.563 33.4399 348.563 54.8799C348.563 59.0399 348.403 63.3599 347.763 67.8399C344.723 88.3199 334.963 126.08 261.523 126.08H254.643ZM310.163 58.7199C310.163 45.5999 301.203 31.6799 265.843 31.6799C226.323 31.6799 216.883 49.2799 215.763 62.8799C215.603 64.9599 215.603 66.5599 215.603 68.3199C215.603 81.2799 223.443 97.1199 259.443 97.1199C298.323 97.1199 307.763 79.5199 309.683 65.1199C310.003 62.7199 310.163 60.9599 310.163 58.7199ZM386.859 124H350.539L369.419 4.95988H453.419C492.459 4.95988 505.099 19.6799 505.099 40.4799C505.099 59.6799 495.819 84.3199 447.659 84.3199H393.259L386.859 124ZM397.259 57.5999H447.499C460.939 57.5999 466.379 51.5199 466.379 43.0399C466.379 35.8399 461.579 31.9999 451.339 31.9999H401.419L397.259 57.5999ZM549.923 55.3599H605.283C617.283 55.3599 621.923 48.7999 621.923 42.3999C621.923 36.3199 618.403 31.9999 608.643 31.9999H553.763L549.923 55.3599ZM545.923 81.7599L539.203 124H502.883L521.763 4.95988H616.163C651.043 4.95988 660.963 18.2399 660.963 33.7599C660.963 52.1599 645.283 60.4799 634.723 63.5199C645.603 66.8799 655.043 74.3999 652.643 89.7599L649.443 109.76C648.163 118.24 649.123 121.28 649.603 123.2L649.443 124H612.483C611.843 122.72 611.363 120.96 612.163 116L614.243 102.88C616.483 88.7999 611.203 81.7599 592.803 81.7599H545.923ZM741.674 126.08C676.874 126.08 663.754 94.5599 663.754 73.2799C663.754 69.5999 663.754 65.5999 664.554 59.8399C667.434 40.3199 677.354 2.87988 750.634 2.87988H757.514C821.834 2.87988 835.594 33.4399 835.594 54.8799C835.594 59.0399 835.434 63.3599 834.794 67.8399C831.754 88.3199 821.994 126.08 748.554 126.08H741.674ZM797.194 58.7199C797.194 45.5999 788.234 31.6799 752.874 31.6799C713.354 31.6799 703.914 49.2799 702.794 62.8799C702.634 64.9599 702.634 66.5599 702.634 68.3199C702.634 81.2799 710.474 97.1199 746.474 97.1199C785.354 97.1199 794.794 79.5199 796.714 65.1199C797.034 62.7199 797.194 60.9599 797.194 58.7199Z" stroke="#F8F8F8" stroke-width="2"/>
+          </svg>
         <div class="years"><img src="img/s2-years.svg" alt="" /></div>
         <div class="cando"><img src="img/s2-cando.svg" alt="" /></div>
       </div>
@@ -50,9 +58,15 @@
     <section class="section03">
       <div class="section03_container">
         <img class="grid" src="img/grid.svg" alt="" />
-        <div class="turned-line"><img src="img/turned-line.svg" alt="" /></div>
+        <div class="turned-line"><img src="img/icon-turned-line.svg" alt="" /></div>
         <div class="sharing"><img src="img/s3-sharing.svg" alt="" /></div>
-        <div class="exper"><img src="img/s3-exper.svg" alt="" /></div>
+        <svg id="s3-exper" width="1247" height="101" viewBox="0 0 1247 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.104 2.664H114.64L111.184 24.296H42.32L40.144 38.376H107.472L104.016 60.136H36.688L34.128 75.752H104.144L100.688 97.896H2L17.104 2.664ZM139.645 97.896H103.037L156.797 49.512L119.037 2.664H156.541L178.557 30.952L209.661 2.664H246.269L194.429 49.512L232.061 97.896H196.221L172.413 68.2L139.645 97.896ZM265.556 97.896H236.5L251.604 2.664H318.804C350.036 2.664 360.148 14.44 360.148 31.08C360.148 46.44 352.724 66.152 314.196 66.152H270.676L265.556 97.896ZM273.876 44.776H314.068C324.82 44.776 329.172 39.912 329.172 33.128C329.172 27.368 325.332 24.296 317.14 24.296H277.204L273.876 44.776ZM373.479 2.664H471.015L467.559 24.296H398.695L396.519 38.376H463.847L460.391 60.136H393.063L390.503 75.752H460.519L457.063 97.896H358.375L373.479 2.664ZM506.132 42.984H550.42C560.02 42.984 563.732 37.736 563.732 32.616C563.732 27.752 560.916 24.296 553.108 24.296H509.204L506.132 42.984ZM502.932 64.104L497.556 97.896H468.5L483.604 2.664H559.124C587.028 2.664 594.964 13.288 594.964 25.704C594.964 40.424 582.42 47.08 573.972 49.512C582.676 52.2 590.228 58.216 588.308 70.504L585.748 86.504C584.724 93.288 585.492 95.72 585.876 97.256L585.748 97.896H556.18C555.668 96.872 555.284 95.464 555.924 91.496L557.588 81C559.38 69.736 555.156 64.104 540.436 64.104H502.932ZM638.91 2.664L623.806 97.896H594.75L609.854 2.664H638.91ZM652.354 2.664H749.89L746.434 24.296H677.57L675.394 38.376H742.722L739.266 60.136H671.938L669.378 75.752H739.394L735.938 97.896H637.25L652.354 2.664ZM762.479 2.664H794.863L843.503 63.848L853.103 2.664H881.775L866.671 97.896H838.127L786.159 33.64L776.047 97.896H747.375L762.479 2.664ZM947.069 99.56H941.949C894.461 99.56 883.069 73.96 883.069 55.4C883.069 52.328 883.197 49.512 883.837 44.904C886.013 28.776 897.917 1 950.653 1H955.645C1010.81 1 1016.83 26.856 1014.91 39.912H984.061C983.677 37.096 981.117 24.04 951.549 24.04C924.285 24.04 916.221 36.84 914.685 46.568C914.301 49 914.173 51.048 914.173 53.352C914.173 64.744 921.341 76.392 945.661 76.392C975.869 76.392 980.221 61.672 981.117 59.496H1011.97C1010.69 73.192 1000.06 99.56 947.069 99.56ZM1030.1 2.664H1127.64L1124.18 24.296H1055.32L1053.14 38.376H1120.47L1117.02 60.136H1049.69L1047.13 75.752H1117.14L1113.69 97.896H1015L1030.1 2.664ZM1175.94 99.56C1127.69 99.56 1124.1 77.672 1125.64 64.104H1155.72C1155.85 70.12 1157.64 79.208 1181.57 79.208H1183.11C1209.73 79.208 1211.53 72.68 1211.53 67.944C1211.53 62.824 1208.71 60.008 1190.15 59.496L1174.28 59.112C1141.12 58.344 1131.91 45.928 1131.91 31.336C1131.91 29.544 1132.04 28.136 1132.29 26.344C1134.21 13.288 1143.81 1 1186.18 1H1194.37C1238.41 1 1246.73 16.616 1244.81 32.36H1214.85C1214.47 28.52 1213.45 20.84 1189.25 20.84H1187.46C1163.65 20.84 1162.24 25.576 1162.24 29.416C1162.24 33 1164.04 37.096 1181.32 37.352L1196.68 37.608C1230.47 38.12 1242.63 46.696 1242.63 64.36C1242.63 66.664 1242.37 69.608 1241.99 71.528C1239.17 85.352 1230.98 99.56 1184.26 99.56H1175.94Z" stroke="#F8F8F8" stroke-width="2"/>
+          </svg>
+          
+
+          
+        <!-- <div class="exper"><img src="img/s3-exper.svg" alt="" /></div> -->
         <div class="world"><img src="img/s3-world.svg" alt="" /></div>
         <div class="here"><img src="img/s3-here.svg" alt="" /></div>
         <div class="you"><img src="img/s3-you.svg" alt="" /></div>
@@ -62,7 +76,11 @@
         <div class="founded"><img src="img/s3-founded.svg" alt="" /></div>
         <div class="we"><img src="img/s3-we.svg" alt="" /></div>
         <div class="force"><img src="img/s3-force.svg" alt="" /></div>
-        <div class="posit"><img src="img/s3-posit.svg" alt="" /></div>
+        <!-- <div class="posit"><img src="img/s3-posit.svg" alt="" /></div> -->
+        <svg id="s3-posit" width="1003" height="101" viewBox="0 0 1003 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M31.056 97.896H2L17.104 2.664H84.304C115.536 2.664 125.648 14.44 125.648 31.08C125.648 46.44 118.224 66.152 79.696 66.152H36.176L31.056 97.896ZM39.376 44.776H79.568C90.32 44.776 94.672 39.912 94.672 33.128C94.672 27.368 90.832 24.296 82.64 24.296H42.704L39.376 44.776ZM189.283 99.56C137.443 99.56 126.947 74.344 126.947 57.32C126.947 54.376 126.947 51.176 127.587 46.568C129.891 30.952 137.827 1 196.451 1H201.955C253.411 1 264.419 25.448 264.419 42.6C264.419 45.928 264.291 49.384 263.779 52.968C261.347 69.352 253.539 99.56 194.787 99.56H189.283ZM233.699 45.672C233.699 35.176 226.531 24.04 198.243 24.04C166.627 24.04 159.075 38.12 158.179 49C158.051 50.664 158.051 51.944 158.051 53.352C158.051 63.72 164.323 76.392 193.123 76.392C224.227 76.392 231.779 62.312 233.315 50.792C233.571 48.872 233.699 47.464 233.699 45.672ZM316.816 99.56C268.56 99.56 264.976 77.672 266.512 64.104H296.592C296.72 70.12 298.512 79.208 322.448 79.208H323.984C350.608 79.208 352.4 72.68 352.4 67.944C352.4 62.824 349.584 60.008 331.024 59.496L315.152 59.112C282 58.344 272.784 45.928 272.784 31.336C272.784 29.544 272.912 28.136 273.168 26.344C275.088 13.288 284.688 1 327.056 1H335.248C379.28 1 387.6 16.616 385.68 32.36H355.728C355.344 28.52 354.32 20.84 330.128 20.84H328.336C304.528 20.84 303.12 25.576 303.12 29.416C303.12 33 304.912 37.096 322.192 37.352L337.552 37.608C371.344 38.12 383.504 46.696 383.504 64.36C383.504 66.664 383.248 69.608 382.864 71.528C380.048 85.352 371.856 99.56 325.136 99.56H316.816ZM431.785 2.664L416.681 97.896H387.625L402.729 2.664H431.785ZM465.581 97.896L477.101 25.192H437.805L441.261 2.664H549.421L545.837 25.192H506.541L495.021 97.896H465.581ZM587.91 2.664L572.806 97.896H543.75L558.854 2.664H587.91ZM626.442 97.896L591.498 2.664H623.37L647.818 73.192L690.058 2.664H720.906L662.794 97.896H626.442ZM754.41 2.664L739.306 97.896H710.25L725.354 2.664H754.41ZM788.206 97.896L799.726 25.192H760.43L763.886 2.664H872.046L868.462 25.192H829.166L817.646 97.896H788.206ZM907.29 97.896L913.178 61.032L872.602 2.664H907.162L930.714 37.736L965.786 2.664H999.706L942.234 61.032L936.346 97.896H907.29Z" stroke="#F8F8F8" stroke-width="2"/>
+          </svg>
+          
         <div class="for"><img src="img/s3-for.svg" alt="" /></div>
       </div>
     </section>
@@ -90,11 +108,69 @@
       </div>
     </section>
 
-    <!-- Section06 : Cam-Detail-01 (Horizon) -->
+    <!-- Section06 : Cam-Detail-01 : 5.3K -->
     <section class="section06">
       <div class="section06_container">
+        <img class="grid" src="img/grid.svg" alt="" />
+        <div class="frame"><img src="img/frame02.svg" alt="" /></div>
+        <div class="video-wrapper">
+          <video src="video/video01.mp4" autoplay muted loop></video>
+        </div>
+        <div class="five-stroke"><img src="img/s6-five-stroke.svg" alt=""></div>
+        <div class="jaw"><img src="img/s6-jaw.svg" alt=""></div>
+        <div class="video"><img src="img/s6-video.svg" alt=""></div>
       </div>
     </section>
+
+    <!-- Section06-1 : Cam-Detail-01 (Horizon START) -->
+    <section class="section06-1">
+      <div class="section06-1_container">
+        <img class="grid" src="img/grid.svg" alt="" />
+        <div class="frame"><img src="img/frame02.svg" alt="" /></div>
+        <div class="video-wrapper">
+          <video src="video/video01.mp4" autoplay muted loop></video>
+        </div>
+        <div class="five"><img src="img/s6-1-five.svg" alt=""></div>
+        <div class="jaw"><img src="img/s6-1-jaw.svg" alt=""></div>
+        <div class="video"><img src="img/s6-1-video.svg" alt=""></div>
+      </div>
+    </section>
+
+    <!-- Section06-2 : Cam-Detail-01 (Horizon) : Slo-Proof -->
+    <section class="section06-2">
+      <div class="section06-2_container">
+        <img class="grid" src="img/grid.svg" alt="" />
+        <div class="frame"><img src="img/frame02.svg" alt="" /></div>
+        <div class="video-wrapper">
+          <video src="video/s6-2-video.mp4" autoplay muted loop></video>
+        </div>
+        <div class="eight"><img src="img/s6-2-eight.svg" alt=""></div>
+        <div class="slo"><img src="img/s6-2-slo.svg" alt=""></div>
+        <div class="up"><img src="img/s6-2-up.svg" alt=""></div>
+        <div class="img01"><img src="img/s6-2-img01.png" alt=""></div>
+        <div class="dura"><img src="img/s6-2-dura.svg" alt=""></div>
+        <div class="water"><img src="img/s6-2-water.svg" alt=""></div>
+        <div class="ultra"><img src="img/s6-2-water.svg" alt=""></div>
+        <div class="feet"><img src="img/s6-2-feet.svg" alt=""></div>
+      </div>
+    </section>
+
+    <!-- Section06-3 : Cam-Detail-01 : Emmy-Winning (Horizon END)-->
+    <section class="section06-3">
+      <div class="section06-3_container">
+        <img class="bg" src="img/s6-3-bg.svg" alt="" />
+        <div class="frame"><img src="img/frame02.svg" alt="" /></div>
+        <div class="video-wrapper">
+          <video src="video/s6-3-video.mp4" autoplay muted loop></video>
+          <div class="video-frame"><img src="img/s6-3-video-frame.svg" alt=""></div>
+        </div>
+        <div class="emmy"><img src="img/s6-3-emmy.svg" alt=""></div>
+        <div class="stab"><img src="img/s6-3-stab.svg" alt=""></div>
+        <div class="hyper"><img src="img/s6-3-hyper.svg" alt=""></div>
+      </div>
+    </section>
+
+
 
     <!-- Section07 : Cam-Detail-02 : LargerSensor-->
     <section class="section07">
@@ -122,23 +198,27 @@
       <div class="section08_container">
         <img src="bg01" src="img/s8-bg01.svg" alt="">
         <img src="bg02" src="img/s8-bg02.svg" alt="">
-        <div class="pro"><img src="img/s8-pro.svg" alt=""></div>
-        <div class="level"><img src="img/s8-level.svg" alt=""></div>
+        
+        <div class="title" data-splitting>
+          <span class="pro">pro</span><br />
+          <span class="level">level</span>
+          <div class="text-group">
+            <span class="stun">stunning</span>
+            <span class="twmp">27mp photos</span>
+            <span class="grab">24.7mp frame grabs</span>
+            <span class="new">new</span>
+            <span class="time">timecode sync</span>
+          </div>
+        </div>
         <div class="img01"><img src="img/s8-img01.png" alt=""></div>
-        <div class="stun"><img src="img/s8-stun.svg" alt=""></div>
-        <div class="photo"><img src="img/s8-photo.svg" alt=""></div>
-        <div class="grab"><img src="img/s8-grab.svg" alt=""></div>
-        <!-- Below Contents -->
-        <div class="new"><img src="img/s8-new.svg" alt=""></div>
-        <div class="time"><img src="img/s8-time.svg" alt=""></div>
         <div class="video-wrapper">
           <video src="video/s8-video.mp4" autoplay muted loop></video>
         </div>
         <div class="bit"><img src="img/s8-bit.svg" alt=""></div>
         <div class="blue"><img src="img/s8-blue.svg" alt=""></div>
         <div class="img02"><img src="img/s8-img02.png" alt=""></div>
-        <div class="bit-stroke"><img src="img/s8-bit-stroke.svg" alt=""></div>
-        <div class="blue-stroke"><img src="img/s8-blue-stroke.svg" alt=""></div>
+        <div class="bit-stroke">10-bit color // Dual LCD Screens</div>
+        <div class="blue-stroke">New Bluetooth Audio Support</div>
       </div>
     </section>
 
@@ -289,6 +369,70 @@
     </section>
 
 
+    <!-- Section18 : Lens-Outro -->
+    <!-- <section class="section18" id="s18-wrapper">
+      <div class="section18_container" id="content">
+        <h3 class="text">GET THE EPIC POV</h3>
+        <h3 aria-hidden="true" class="text outline-text">GET THE EPIC POV</h3>
+        <h3 aria-hidden="true" class="text filter-text">GET THE EPIC POV</h3>
 
+        <div class="images">
+          <div class="img01"><img src="img/s18-img01.svg" alt=""></div>
+          <div class="img02"><img src="img/s18-img02.svg" alt=""></div>
+          <div class="img03"><img src="img/s18-img03.svg" alt=""></div>
+          <div class="img04"><img src="img/s18-img04.svg" alt=""></div>
+          <div class="img05"><img src="img/s18-img05.svg" alt=""></div>
+          <div class="img06"><img src="img/s18-img06.svg" alt=""></div>
+          <div class="img07"><img src="img/s18-img07.svg" alt=""></div>
+          <div class="img08"><img src="img/s18-img08.svg" alt=""></div>
+        </div>
+        <div class="get"><img src="img/s18-get.svg" alt=""></div>
+        <div class="shots"><img src="img/s18-shots.svg" alt=""></div>
+        <div class="you"><img src="img/s18-you.svg" alt=""></div>
+        <div class="always"><img src="img/s18-always.svg" alt=""></div>
+        
+      </div>
+    </section> -->
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer">
+        <img src="img/footer-copy.svg" alt="" />
+        <ul class="sns">
+          <li><a href="#"><img src="img/icon-gopro.svg" alt=""></a></li>
+          <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+          <li><a href="#"><i class="ri-twitter-x-line"></i></a></li>
+          <li><a href="#"><i class="ri-facebook-box-line"></i></a></li>
+          <li><a href="#"><i class="ri-pinterest-line"></i></a></li>
+          <li><a href="#"><i class="ri-youtube-line"></i></a></li>
+          <li><a href="#"><img src="img/icon-tictok.svg" alt=""></a></li>
+        </ul>
+      </div>
+    </footer>
+
+
+<!-- TEST PAGE -->
+    <section class="testpage">
+      <div class="testpage_container">
+  
+      </div>
+    </section>
+
+
+
+
+    <!-- GSAP Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <!-- GSAP ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
+
+    <!-- ScrollBar (원장님이 주신거) -->
+    <script src="js/scrollbar.js"></script>
+
+    <!-- Splitting Plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/splitting@1.0.6/dist/splitting.min.js"></script>
+
+  
+    <script src="js/custom.js"></script>
   </body>
 </html>

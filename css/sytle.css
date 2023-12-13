@@ -1,5 +1,6 @@
 body {
   background: var(--bg-black01);
+  color: var(--white);
 }
 
 /* HEADER */
@@ -117,10 +118,17 @@ header {
   mix-blend-mode: lighten;
 }
 
-.section02 .gopro {
+#s2-gopro {
   position: absolute;
   left: 355px;
   top: 565px;
+  animation: filled 0.8s ease forwards 1.2s;
+}
+
+#s2-gopro path {
+  stroke-dasharray: 500px;
+  stroke-dashoffset: 500px;
+  animation: line-anim 2s ease forwards;
 }
 
 .section02 .years {
@@ -160,6 +168,8 @@ header {
   position: absolute;
   left: 1172px;
   top: 316px;
+  animation: rotate-left 2.6s infinite cubic-bezier(0.3, 0.7, 0.5, 0.3);
+  transform-origin: 50% 50%;
 }
 
 .section03 .sharing {
@@ -168,10 +178,23 @@ header {
   top: 277px;
 }
 
-.section03 .exper {
+/* .section03 .exper {
   position: absolute;
   left: 193px;
   top: 390px;
+} */
+
+#s3-exper {
+  position: absolute;
+  left: 193px;
+  top: 390px;
+  animation: filled 0.8s ease forwards 1.2s;
+}
+
+#s3-exper path {
+  stroke-dasharray: 500px;
+  stroke-dashoffset: 500px;
+  animation: line-anim 2s ease forwards;
 }
 
 .section03 .world {
@@ -218,10 +241,23 @@ header {
   top: 1320px;
 }
 
-.section03 .posit {
+/* .section03 .posit {
   position: absolute;
   left: 654px;
   top: 1409px;
+} */
+
+#s3-posit {
+  position: absolute;
+  left: 654px;
+  top: 1409px;
+  animation: filled 0.8s ease forwards 1.2s;
+}
+
+#s3-posit path {
+  stroke-dasharray: 500px;
+  stroke-dashoffset: 500px;
+  animation: line-anim 2s ease forwards;
 }
 
 .section03 .for {
@@ -317,11 +353,11 @@ header {
   top: 711px;
 }
 
-/* Section06 : Cam-Detail-01 (Horizon) */
+/* Section06 : Cam-Detail-01 : 5.3K*/
 
 .section06 {
   width: 1920px;
-  height: 1020px;
+  height: 1080px;
   margin: auto;
   background: var(--test-color);
 }
@@ -331,6 +367,265 @@ header {
   height: auto;
   position: relative;
   overflow: hidden;
+}
+
+.section06 .grid {
+  width: 100%;
+  position: relative;
+}
+
+.section06 .frame {
+  position: absolute;
+  left: 40px;
+  top: 100px;
+}
+
+.section06 .video-wrapper {
+  width: 1298px;
+  height: 730px;
+  overflow: hidden;
+  position: absolute;
+  left: 311px;
+  top: 111px;
+}
+
+.section06 .video-wrapper video {
+  width: 100%;
+}
+
+.section06 .five-stroke {
+  position: absolute;
+  left: 471px;
+  top: 333px;
+}
+
+.section06 .jaw {
+  position: absolute;
+  left: 574px;
+  top: 614px;
+}
+
+.section06 .video {
+  position: absolute;
+  left: 1072px;
+  top: 526px;
+}
+
+/* Section06-1 : Cam-Detail-01 (Horizon START) */
+
+.section06-1 {
+  width: 1920px;
+  height: 1080px;
+  margin: auto;
+  /* background: var(--test-color); */
+}
+
+.section06-1_container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.section06-1 .grid {
+  width: 100%;
+  position: relative;
+}
+
+.section06-1 .frame {
+  position: absolute;
+  left: 40px;
+  top: 100px;
+}
+
+.section06-1 .video-wrapper {
+  width: 1298px;
+  height: 730px;
+  overflow: hidden;
+  position: absolute;
+  left: 311px;
+  top: 111px;
+}
+
+.section06-1 .video-wrapper video {
+  width: 100%;
+}
+
+.section06-1 .five {
+  position: absolute;
+  left: 764px;
+  top: 737px;
+}
+
+.section06-1 .jaw {
+  position: absolute;
+  left: 804px;
+  top: 847px;
+}
+
+.section06-1 .video {
+  position: absolute;
+  left: 1003px;
+  top: 812px;
+}
+
+/* Section06-2 : Cam-Detail-01 (Horizon) : Slo-Proof */
+.section06-2 {
+  width: 1920px;
+  height: 1080px;
+  margin: auto;
+  /* background: var(--test-color); */
+}
+
+.section06-2_container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.section06-2 .grid {
+  width: 100%;
+  position: relative;
+}
+
+.section06-2 .frame {
+  position: absolute;
+  left: 40px;
+  top: 100px;
+}
+
+.section06-2 .video-wrapper {
+  width: 462px;
+  height: 371px;
+  overflow: hidden;
+  position: absolute;
+  left: 210px;
+  top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section06-2 .video-wrapper video {
+  width: 104%;
+}
+
+.section06-2 .eight {
+  position: absolute;
+  left: 598px;
+  top: 451px;
+}
+
+.section06-2 .slo {
+  position: absolute;
+  left: 493px;
+  top: 527px;
+}
+
+.section06-2 .up {
+  position: absolute;
+  left: 503px;
+  top: 480px;
+}
+
+.section06-2 .img01 {
+  position: absolute;
+  left: 896px;
+  top: 318px;
+}
+
+.section06-2 .dura {
+  position: absolute;
+  left: 668px;
+  top: 526px;
+}
+
+.section06-2 .water {
+  position: absolute;
+  left: 820px;
+  top: 582px;
+}
+
+.section06-2 .ultra {
+  position: absolute;
+  left: 625px;
+  top: 750px;
+}
+
+.section06-2 .feet {
+  position: absolute;
+  left: 1617px;
+  top: 281px;
+}
+
+/* Section06-3 : Cam-Detail-01 : Emmy-Winning (Horizon END) */
+
+.section06-3 {
+  width: 1920px;
+  height: 1020px;
+  margin: auto;
+  /* background: var(--test-color); */
+}
+
+.section06-3_container {
+  width: 100%;
+  height: 1020px;
+  position: relative;
+  overflow: hidden;
+}
+
+.section06-3 .bg {
+  position: absolute;
+  right: 0px;
+  top: 155px;
+}
+
+.section06-3 .frame {
+  position: absolute;
+  left: 40px;
+  top: 100px;
+}
+
+.section06-3 .video-wrapper {
+  width: 982px;
+  height: 524px;
+  overflow: hidden;
+  position: absolute;
+  left: 179px;
+  top: 225px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section06-3 .video-wrapper video {
+  width: 100%;
+}
+
+.section06-3 .video-frame {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section06-3 .emmy {
+  position: absolute;
+  left: 1051px;
+  top: 416px;
+}
+
+.section06-3 .stab {
+  position: absolute;
+  left: 1055px;
+  top: 481px;
+}
+
+.section06-3 .hyper {
+  position: absolute;
+  left: 1484px;
+  top: 556px;
 }
 
 /* Section07 : Cam-Detail-02 : LargerSensor*/
@@ -433,6 +728,7 @@ header {
 
 .section07 .video-wrapper video {
   width: 100%;
+  border-radius: 7rem;
   /* mix-blend-mode: lighten; */
 }
 
@@ -467,16 +763,27 @@ header {
   top: 650px;
 }
 
+.section08 .title span {
+  font-family: "Druk Wide Trial", sans-serif;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
 .section08 .pro {
+  font-size: 8rem;
   position: absolute;
   left: 193px;
   top: 257px;
 }
 
 .section08 .level {
+  font-size: 8rem;
   position: absolute;
   left: 190px;
   top: 406px;
+  display: inline-block;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--white);
 }
 
 .section08 .img01 {
@@ -485,13 +792,21 @@ header {
   top: 301px;
 }
 
+.section08 .title .text-group {
+  font-size: 1.5rem;
+  text-wrap: nowrap;
+}
+
 .section08 .stun {
   position: absolute;
   left: 1124px;
   top: 536px;
+  display: inline-block;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--white);
 }
 
-.section08 .photo {
+.section08 .twmp {
   position: absolute;
   left: 1125px;
   top: 569px;
@@ -507,6 +822,9 @@ header {
   position: absolute;
   left: 192px;
   top: 793px;
+  display: inline-block;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--white);
 }
 
 .section08 .time {
@@ -517,8 +835,8 @@ header {
 
 .section08 .img02 {
   position: absolute;
-  left: px;
-  top: px;
+  left: 815px;
+  top: 1336px;
 }
 
 .section08 .video-wrapper {
@@ -557,12 +875,18 @@ header {
   position: absolute;
   left: 355px;
   top: 1589px;
+  font-family: "Druk Wide Trial", sans-serif;
+  font-size: 6rem;
+  text-transform: uppercase;
 }
 
 .section08 .blue-stroke {
   position: absolute;
   left: 0px;
   top: 1702px;
+  font-family: "Druk Wide Trial", sans-serif;
+  font-size: 6rem;
+  text-transform: uppercase;
 }
 
 /* Section09 : Cam-Detail-04 : NailShot */
@@ -1206,4 +1530,253 @@ header {
   position: absolute;
   left: 255px;
   top: 657px;
+}
+
+/* Section18 : Lens-Outro */
+.section18 {
+  width: 1920px;
+  height: 1020px;
+  margin: auto;
+  /* background: var(--test-color); */
+}
+
+.section18_container {
+  width: 100%;
+  height: 1020px;
+  position: relative;
+  /* overflow: hidden; */
+}
+/* -------------- GSAP CODE START -------------- */
+/* #s18-wrapper {
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+} */
+
+/* #content {
+  overflow: visible;
+  width: 100%;
+}
+
+.section18 .text {
+  position: fixed;
+  top: 50vh;
+  font-family: "Druk Wide Trial", sans-serif;
+  font-style: italic;
+  font-size: 4rem;
+  text-align: center;
+  width: 100%;
+  transform: translateY(-100%);
+  z-index: 2;
+  color: var(--white);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--white);
+  z-index: -2;
+}
+
+.section18 .outline-text {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--white);
+  z-index: 2;
+}
+
+.section18 .filter-text {
+  mix-blend-mode: screen;
+  color: #804691;
+  z-index: 2;
+}
+
+#s18-wrapper .images {
+  padding-top: 60vh;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 150vh;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(20, 2%);
+  grid-template-rows: repeat(30, 3%);
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.content__slide-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+img:nth-child(1) {
+  grid-area: 1/1/6/8;
+}
+
+img:nth-child(2) {
+  grid-area: 3/12/8/20;
+}
+
+img:nth-child(3) {
+  grid-area: 9/5/13/15;
+}
+
+img:nth-child(4) {
+  grid-area: 14/1/18/8;
+}
+
+img:nth-child(5) {
+  grid-area: 16/12/20/19;
+}
+
+img:nth-child(6) {
+  grid-area: 20/2/25/9;
+}
+
+img:nth-child(7) {
+  grid-area: 22/11/24/20;
+}
+
+img:nth-child(8) {
+  grid-area: 26/5/30/15;
+}
+
+/* -------------- GSAP CODE END -------------- */
+
+.section18 .img01 {
+  position: absolute;
+  left: 828px;
+  top: -42px;
+}
+
+.section18 .img02 {
+  position: absolute;
+  left: 1088px;
+  top: 157px;
+}
+
+.section18 .img03 {
+  position: absolute;
+  left: 537px;
+  top: 164px;
+}
+
+.section18 .img04 {
+  position: absolute;
+  left: 794px;
+  top: 377px;
+}
+
+.section18 .img05 {
+  position: absolute;
+  left: 1232px;
+  top: 624px;
+}
+
+.section18 .img06 {
+  position: absolute;
+  left: 1088px;
+  top: 706px;
+}
+
+.section18 .img07 {
+  position: absolute;
+  left: 576px;
+  top: 877px;
+}
+
+.section18 .img08 {
+  position: absolute;
+  left: 499px;
+  top: 702px;
+}
+
+.section18 .get {
+  position: absolute;
+  left: 443px;
+  top: 457px;
+}
+
+.section18 .shots {
+  position: absolute;
+  left: 1262px;
+  top: 418px;
+}
+
+.section18 .you {
+  position: absolute;
+  left: 521px;
+  top: 544px;
+}
+
+.section18 .always {
+  position: absolute;
+  left: 694px;
+  top: 492px;
+}
+*/
+
+/* FOOTER */
+footer {
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 0.5rem;
+  background: transparent;
+  z-index: 9998;
+}
+
+.footer {
+  width: 1840px;
+  height: 80px;
+  margin: 0 auto;
+  border-top: 1px solid #f8f8f8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .sns {
+  display: flex;
+  column-gap: 2.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .sns li img {
+  width: 90%;
+}
+
+.footer .sns li i {
+  font-size: 1.25rem;
+}
+
+/* TEST PAGE */
+.testpage {
+  width: 1920px;
+  height: 1020px;
+  margin: auto;
+  background-color: var(--test-color);
+}
+
+.testpage_container {
+  width: 100%;
+  height: 1020px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
 }

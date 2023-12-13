@@ -5,6 +5,17 @@
 /* font-family: 'Druk Wide Trial', sans-serif; */
 /* font-family: 'Strong Attraction', sans-serif; */
 
+/* Root Style Guide */
+:root {
+  /* COLOR */
+  --bg-black01: #0e0e0e;
+  --bg-black02: #000;
+
+  --white: #f8f8f8;
+
+  --test-color: #689d65;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,14 +27,11 @@ ol {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
 img {
   display: block;
-}
-/* Root Style Guide */
-:root {
-  /* COLOR */
-  --bg-black01: #0e0e0e;
-  --bg-black02: #000;
-
-  --test-color: #689d65;
 }
