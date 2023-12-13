@@ -25,6 +25,15 @@ header {
   align-items: center;
 }
 
+/* FRAME */
+.frame01 {
+  width: 1840px;
+  position: fixed;
+  left: 40px;
+  top: 100px;
+  z-index: 9998;
+}
+
 /* Section01 : Intro Video */
 
 .section01 {
@@ -77,11 +86,6 @@ header {
   position: absolute;
   left: 472px;
   top: 92px;
-  /* font-family: "Druk Wide Trial", sans-serif;
-  font-size: 12rem;
-  text-transform: uppercase;
-  line-height: 1;
-  text-align: right; */
 }
 
 .section02 .frame {
