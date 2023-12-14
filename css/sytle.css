@@ -1,7 +1,31 @@
 body {
+  width: 100%;
+  height: 100vh;
+  margin: auto;
   background: var(--bg-black01);
   color: var(--white);
+  background-image: url("../img/grid.svg");
+  background-repeat: repeat;
+  background-size: contain;
 }
+
+/* Cursor */
+/* #cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+  pointer-events: none;
+}
+
+#cursor > div {
+  border: 3px solid var(--test-color);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transform: scale(0.15);
+  background: var(--white);
+} */
 
 /* HEADER */
 
@@ -25,20 +49,61 @@ header {
   align-items: center;
 }
 
-/* FRAME */
-.frame01 {
-  width: 1840px;
+/* SIDE BAR */
+.sidebar {
+  width: 1920px;
+  height: 100vh;
+  background: var(--bg-black01);
+  margin: auto;
   position: fixed;
-  left: 40px;
-  top: 100px;
+  left: 50%;
+  align-items: center;
+  justify-content: center;
   z-index: 9998;
+  overflow: hidden;
+  display: none;
+  transform: translateX(-50%);
 }
 
-/* Section01 : Intro Video */
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+  text-align: center;
+}
+
+.sidebar a {
+  font-family: "Druk Wide Trial", sans-serif;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  padding: 2rem;
+}
+
+/* FRAME */
+.frame01 {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 100px;
+  margin: 0 auto;
+  z-index: 9997;
+}
+
+.frame01 .frame {
+  width: 1840px;
+}
+
+/* Section01 : Intro-Video */
 
 .section01 {
   width: 1920px;
   height: 1080px;
+  position: relative;
   margin: auto;
   background: var(--test-color);
 }
@@ -46,7 +111,7 @@ header {
 .section01_container {
   width: 100%;
   height: auto;
-  position: relative;
+  position: absolute;
   overflow: hidden;
 }
 
@@ -71,8 +136,9 @@ header {
 .section02 {
   width: 1920px;
   height: 1020px;
+  position: relative;
   margin: auto;
-  /* background: var(--test-color); */
+  background: var(--bg-black01);
 }
 
 .section02_container {
@@ -86,12 +152,6 @@ header {
   position: absolute;
   left: 472px;
   top: 92px;
-}
-
-.section02 .frame {
-  position: absolute;
-  left: 40px;
-  top: 100px;
 }
 
 .section02 .does {
@@ -161,11 +221,6 @@ header {
   height: auto;
   position: relative;
   /* overflow: hidden; */
-}
-
-.section03 .grid {
-  width: 100%;
-  position: relative;
 }
 
 .section03 .turned-line img {
@@ -282,7 +337,7 @@ header {
   width: 100%;
   height: auto;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .section04 video {
@@ -301,18 +356,7 @@ header {
   width: 100%;
   height: 1020px;
   position: relative;
-  overflow: hidden;
-}
-
-.section05 .grid {
-  width: 100%;
-  position: relative;
-}
-
-.section05 .frame {
-  position: absolute;
-  left: 40px;
-  top: 100px;
+  /* overflow: hidden;*/
 }
 
 .section05 .photo01 {
@@ -357,7 +401,7 @@ header {
   top: 711px;
 }
 
-/* Section06 : Cam-Detail-01 : 5.3K*/
+/* Section06 : Cam-Detail-01 : 5.3K */
 
 .section06 {
   width: 1920px;
@@ -370,18 +414,7 @@ header {
   width: 100%;
   height: auto;
   position: relative;
-  overflow: hidden;
-}
-
-.section06 .grid {
-  width: 100%;
-  position: relative;
-}
-
-.section06 .frame {
-  position: absolute;
-  left: 40px;
-  top: 100px;
+  /* overflow: hidden; */
 }
 
 .section06 .video-wrapper {
@@ -428,18 +461,7 @@ header {
   width: 100%;
   height: auto;
   position: relative;
-  overflow: hidden;
-}
-
-.section06-1 .grid {
-  width: 100%;
-  position: relative;
-}
-
-.section06-1 .frame {
-  position: absolute;
-  left: 40px;
-  top: 100px;
+  /* overflow: hidden; */
 }
 
 .section06-1 .video-wrapper {
@@ -473,7 +495,7 @@ header {
   top: 812px;
 }
 
-/* Section06-2 : Cam-Detail-01 (Horizon) : Slo-Proof */
+/* Section06-2 : Cam-Detail-01 : Slo-Proof (Horizon) */
 .section06-2 {
   width: 1920px;
   height: 1080px;
@@ -485,18 +507,7 @@ header {
   width: 100%;
   height: auto;
   position: relative;
-  overflow: hidden;
-}
-
-.section06-2 .grid {
-  width: 100%;
-  position: relative;
-}
-
-.section06-2 .frame {
-  position: absolute;
-  left: 40px;
-  top: 100px;
+  /* overflow: hidden; */
 }
 
 .section06-2 .video-wrapper {
@@ -576,19 +587,13 @@ header {
   width: 100%;
   height: 1020px;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .section06-3 .bg {
   position: absolute;
   right: 0px;
   top: 155px;
-}
-
-.section06-3 .frame {
-  position: absolute;
-  left: 40px;
-  top: 100px;
 }
 
 .section06-3 .video-wrapper {
@@ -632,7 +637,7 @@ header {
   top: 556px;
 }
 
-/* Section07 : Cam-Detail-02 : LargerSensor*/
+/* Section07 : Cam-Detail-02 : LargerSensor */
 .section07 {
   width: 1920px;
   height: 2750px;
@@ -652,12 +657,6 @@ header {
   position: absolute;
   left: 0;
   top: 26px;
-}
-
-.section07 .frame {
-  position: absolute;
-  left: 40px;
-  top: 100px;
 }
 
 .section07 .larger {
@@ -971,12 +970,6 @@ header {
   overflow: hidden;
 }
 
-.section10 .frame {
-  position: absolute;
-  left: 40px;
-  top: 100px;
-}
-
 .section10 .night {
   position: absolute;
   left: 330px;
@@ -1054,17 +1047,6 @@ header {
   overflow: hidden;
 }
 
-.section12 .grid {
-  width: 100%;
-  position: relative;
-}
-
-.section12 .frame {
-  position: absolute;
-  left: 40px;
-  top: 100px;
-}
-
 .section12 .img01 {
   position: absolute;
   left: 1152px;
@@ -1122,17 +1104,6 @@ header {
   overflow: hidden;
 }
 
-.section13 .grid {
-  width: 100%;
-  position: relative;
-}
-
-.section13 .frame {
-  position: absolute;
-  left: 40px;
-  top: 100px;
-}
-
 .section13 .img01 {
   position: absolute;
   left: 435px;
@@ -1169,7 +1140,7 @@ header {
   top: 543px;
 }
 
-/* Section14 : Lens-Detail-02 (Horizon) */
+/* Section14 : Lens-Detail-02 : Wide4K 마지막 (Horizon START) */
 .section14 {
   width: 1920px;
   height: 1020px;
@@ -1182,17 +1153,6 @@ header {
   height: 1020px;
   position: relative;
   overflow: hidden;
-}
-
-.section14 .grid {
-  width: 100%;
-  position: relative;
-}
-
-.section14 .frame {
-  position: absolute;
-  left: 40px;
-  top: 100px;
 }
 
 .section14 .img03 {
@@ -1244,17 +1204,6 @@ header {
   height: 1020px;
   position: relative;
   /* overflow: hidden; */
-}
-
-.section15 .grid {
-  width: 100%;
-  position: relative;
-}
-
-.section15 .frame {
-  position: absolute;
-  left: 40px;
-  top: 100px;
 }
 
 /* S15-1 : Vertical Capture */
@@ -1388,19 +1337,7 @@ header {
   /* overflow: hidden; */
 }
 
-.section15 .grid {
-  width: 100%;
-  position: relative;
-}
-
-.section15 .frame {
-  position: absolute;
-  left: 40px;
-  top: 100px;
-}
-
 /* Section16 : Lens-Detail-03 : Vertical (Horizon END) */
-
 .section16 {
   width: 1920px;
   height: 1020px;
@@ -1411,19 +1348,8 @@ header {
 .section16_container {
   width: 100%;
   height: 1020px;
-  position: relative;
-  overflow: hidden;
-}
-
-.section16 .grid {
-  width: 100%;
-  position: relative;
-}
-
-.section16 .frame {
   position: absolute;
-  left: 40px;
-  top: 100px;
+  /* overflow: hidden; */
 }
 
 .section16 .video-wrapper {
@@ -1488,19 +1414,8 @@ header {
 .section17_container {
   width: 100%;
   height: 1020px;
-  position: relative;
-  overflow: hidden;
-}
-
-.section17 .grid {
-  width: 100%;
-  position: relative;
-}
-
-.section17 .frame {
   position: absolute;
-  left: 40px;
-  top: 100px;
+  overflow: hidden;
 }
 
 .section17 .video-wrapper {
@@ -1731,7 +1646,6 @@ img:nth-child(8) {
   left: 694px;
   top: 492px;
 }
-*/
 
 /* FOOTER */
 footer {
@@ -1752,6 +1666,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: var(--bg-black01);
 }
 
 .footer .sns {
@@ -1769,18 +1684,22 @@ footer {
   font-size: 1.25rem;
 }
 
-/* TEST PAGE */
-.testpage {
-  width: 1920px;
-  height: 1020px;
-  margin: auto;
-  background-color: var(--test-color);
+/* ------- 혜민님 가로스크롤 ----------- */
+/* 가로스크롤 */
+/* .horizontal-scroll {
+  overflow: hidden;
+  width: 100%; 수정: 가로 크기를 100%로 변경 */
+/* position: relative;
+  margin: 0 auto;
 }
 
-.testpage_container {
-  width: 100%;
-  height: 1020px;
-  margin: auto;
-  position: relative;
-  overflow: hidden;
-}
+.horizontal {
+  width: fit-content;
+  display: flex;
+  width: 6000px; */
+/* width: 6000px;
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content; /* 수정: 가로 크기를 100%로 변경 */
+/* scroll-snap-type: x mandatory; 추가: 스크롤 스냅 기능 활성화 */
+/* } */
