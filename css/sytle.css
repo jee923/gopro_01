@@ -82,7 +82,7 @@ header {
 }
 
 /* FRAME */
-.frame01 {
+.frame {
   width: 100%;
   height: auto;
   margin: auto;
@@ -94,7 +94,7 @@ header {
   z-index: 9997;
 }
 
-.frame01 .frame {
+.frame img {
   width: 1840px;
 }
 
@@ -790,9 +790,16 @@ header {
 }
 
 .section08 .img01 {
+  width: 445px;
+  height: 228px;
+  overflow: hidden;
   position: absolute;
   left: 1125px;
   top: 301px;
+}
+
+.section08 .img01 img {
+  width: 100%;
 }
 
 .section08 .title .text-group {
@@ -837,16 +844,22 @@ header {
 }
 
 .section08 .img02 {
+  width: 910px;
+  height: 484px;
+  overflow: hidden;
   position: absolute;
   left: 815px;
   top: 1336px;
+}
+
+.section08 .img02 img {
+  width: 130%;
 }
 
 .section08 .video-wrapper {
   width: 445px;
   height: 335px;
   overflow: hidden;
-  border-radius: 1rem;
   position: absolute;
   left: 193px;
   top: 864px;
@@ -933,26 +946,30 @@ header {
 
 .section09 .img01 {
   position: absolute;
-  left: 1376px;
-  top: 271px;
+  left: 1350px;
+  top: 245px;
+}
+
+.section09 .img01 img {
+  width: 80%;
 }
 
 .section09 .img02 {
   position: absolute;
-  left: 1005px;
-  top: 512px;
+  left: 940px;
+  top: 515px;
 }
 
 .section09 .img03 {
   position: absolute;
-  left: 378px;
-  top: 227px;
+  left: 307px;
+  top: 138px;
 }
 
 .section09 .img04 {
   position: absolute;
-  left: 557px;
-  top: 726px;
+  left: 639px;
+  top: 721px;
 }
 
 /* Section10 : Cam-Detail-05 : NightEffects */
@@ -976,10 +993,18 @@ header {
   top: 348px;
 }
 
-.section10 .img01 {
+.section10 .video-wrapper01 {
+  width: 140px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 0.625rem;
   position: absolute;
   left: 785px;
   top: 345px;
+}
+
+.section10 .video-wrapper01 video {
+  width: 100%;
 }
 
 .section10 .push {
@@ -994,10 +1019,18 @@ header {
   top: 616px;
 }
 
-.section10 .img02 {
+.section10 .video-wrapper02 {
+  width: 140px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 0.625rem;
   position: absolute;
   left: 1225px;
   top: 488px;
+}
+
+.section10 .video-wrapper02 video {
+  width: 100%;
 }
 
 .section10 .star {
@@ -1006,10 +1039,18 @@ header {
   top: 617px;
 }
 
-.section10 .img03 {
+.section10 .video-wrapper03 {
+  width: 140px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 0.625rem;
   position: absolute;
   left: 447px;
   top: 617px;
+}
+
+.section10 .video-wrapper03 video {
+  width: 100%;
 }
 
 /* Section11 : Lens-Intro-Video */
@@ -1439,16 +1480,55 @@ header {
   top: 305px;
 }
 
+#smaller {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  animation: filled 0.8s ease forwards 1.2s;
+}
+
+#smaller path {
+  stroke-dasharray: 500px;
+  stroke-dashoffset: 500px;
+  animation: line-anim 2s ease forwards;
+}
+
 .section17 .lighter {
   position: absolute;
   left: 249px;
   top: 481px;
 }
 
+#lighter {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  animation: filled 0.8s ease forwards 1.2s;
+}
+
+#lighter path {
+  stroke-dasharray: 500px;
+  stroke-dashoffset: 500px;
+  animation: line-anim 2s ease forwards;
+}
+
 .section17 .tougher {
   position: absolute;
   left: 255px;
   top: 657px;
+}
+
+#tougher {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  animation: filled 0.8s ease forwards 1.2s;
+}
+
+#tougher path {
+  stroke-dasharray: 500px;
+  stroke-dashoffset: 500px;
+  animation: line-anim 2s ease forwards;
 }
 
 /* Section18 : Lens-Outro */
