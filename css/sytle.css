@@ -4,9 +4,9 @@ body {
   margin: auto;
   background: var(--bg-black01);
   color: var(--white);
-  background-image: url("../img/grid.svg");
+  /* background-image: url("../img/grid.svg");
   background-repeat: repeat;
-  background-size: contain;
+  background-size: contain; */
 }
 
 /* Cursor */
@@ -105,7 +105,7 @@ header {
   height: 1080px;
   position: relative;
   margin: auto;
-  background: var(--test-color);
+  /* background: var(--test-color); */
 }
 
 .section01_container {
@@ -123,12 +123,18 @@ header {
   position: absolute;
   left: 900px;
   top: 901px;
+  opacity: 0;
+  mix-blend-mode: difference;
+  animation: appear-arrow 2s ease forwards;
 }
 
 .section01 .down-arrow {
   position: absolute;
   left: 950px;
   top: 957px;
+  opacity: 0;
+  mix-blend-mode: difference;
+  animation: appear-arrow 2s ease forwards 3;
 }
 
 /* Section02 : Brand-Main */
@@ -213,6 +219,9 @@ header {
   width: 1920px;
   height: 1940px;
   margin: auto;
+  background-image: url("../img/grid.svg");
+  background-repeat: repeat;
+  background-size: contain;
   /* background: var(--test-color); */
 }
 
@@ -330,7 +339,7 @@ header {
   width: 1920px;
   height: 1080px;
   margin: auto;
-  background: var(--test-color);
+  /* background: var(--test-color); */
 }
 
 .section04_container {
@@ -369,6 +378,7 @@ header {
   position: absolute;
   left: 761px;
   top: 203px;
+  animation: float-obj 1s infinite alternate;
 }
 
 .section05 .black {
@@ -407,7 +417,7 @@ header {
   width: 1920px;
   height: 1080px;
   margin: auto;
-  background: var(--test-color);
+  /* background: var(--test-color); */
 }
 
 .section06_container {
@@ -418,12 +428,12 @@ header {
 }
 
 .section06 .video-wrapper {
-  width: 1298px;
-  height: 730px;
+  width: 100%;
+  height: auto;
   overflow: hidden;
   position: absolute;
-  left: 311px;
-  top: 111px;
+  left: 0px;
+  top: 0px;
 }
 
 .section06 .video-wrapper video {
@@ -722,7 +732,7 @@ header {
 .section07 .video-wrapper {
   width: 564px;
   height: 397px;
-  overflow: hidden;
+  /* overflow: hidden; */
   border-radius: 1rem;
   position: absolute;
   left: 678px;
@@ -732,7 +742,7 @@ header {
 .section07 .video-wrapper video {
   width: 100%;
   border-radius: 7rem;
-  /* mix-blend-mode: lighten; */
+  mix-blend-mode: lighten;
 }
 
 /* Section08 : Cam-Detail-03 : ProLevel */
@@ -950,7 +960,7 @@ header {
   top: 245px;
 }
 
-.section09 .img01 img {
+.section09 .imgs img {
   width: 80%;
 }
 
@@ -1059,7 +1069,7 @@ header {
   width: 1920px;
   height: 1080px;
   margin: auto;
-  background: var(--test-color);
+  /* background: var(--test-color); */
 }
 
 .section11_container {
@@ -1078,6 +1088,9 @@ header {
   width: 1920px;
   height: 1020px;
   margin: auto;
+  background-image: url("../img/grid.svg");
+  background-repeat: repeat;
+  background-size: contain;
   /* background: var(--test-color); */
 }
 
@@ -1143,6 +1156,9 @@ header {
   height: 1020px;
   position: relative;
   overflow: hidden;
+  background-image: url("../img/grid.svg");
+  background-repeat: repeat;
+  background-size: contain;
 }
 
 .section13 .img01 {
@@ -1186,6 +1202,9 @@ header {
   width: 1920px;
   height: 1020px;
   margin: auto;
+  background-image: url("../img/grid.svg");
+  background-repeat: repeat;
+  background-size: contain;
   /* background: var(--test-color); */
 }
 
@@ -1237,6 +1256,9 @@ header {
   width: 1920px;
   height: 1020px;
   margin: auto;
+  background-image: url("../img/grid.svg");
+  background-repeat: repeat;
+  background-size: contain;
   /* background: var(--test-color); */
 }
 
@@ -1383,6 +1405,9 @@ header {
   width: 1920px;
   height: 1020px;
   margin: auto;
+  background-image: url("../img/grid.svg");
+  background-repeat: repeat;
+  background-size: contain;
   /* background: var(--test-color); */
 }
 
@@ -1460,12 +1485,12 @@ header {
 }
 
 .section17 .video-wrapper {
-  width: 706px;
-  height: 532px;
+  width: 802px;
+  height: 604px;
   overflow: hidden;
   position: absolute;
-  left: 1005px;
-  top: 234px;
+  left: 957px;
+  top: 198px;
 }
 
 .section17 .video-wrapper video {

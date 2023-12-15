@@ -20,3 +20,22 @@
     transform: rotate(-360deg);
   }
 }
+
+/* 화살표 나타나게 하기 */
+@keyframes appear-arrow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes float-obj {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, -15px);
+  }
+}

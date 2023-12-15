@@ -15,6 +15,28 @@ ScrollTrigger.matchMedia({
   "(min-width: 1800px)": function () {
     //최소 너비 1600px이상에서만 애니메이션이 동작하도록 설정
 
+    var ani01 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".section01",
+        start: "top top",
+        scrub: true,
+        pin: true,
+        // markers: true,
+      },
+    });
+
+    ani01.fromTo(
+      ".section01 video",
+      {
+        clipPath: "circle(0.5% at 50% 50%)",
+      },
+      {
+        clipPath: "circle(100% at 50% 50%)",
+        // ease: "expo.out",
+        duration: 3,
+      }
+    );
+
     // Section02
     var ani02 = gsap.timeline({
       scrollTrigger: {
@@ -33,7 +55,7 @@ ScrollTrigger.matchMedia({
     ani02.fromTo(
       ".section02 video",
       { y: 600, opacity: 0 },
-      { y: 0, duration: 2.5, ease: "expo.inOut", opacity: 1 }
+      { y: 0, duration: 2, ease: "expo.inOut", opacity: 1 }
     );
 
     // Section03
@@ -41,55 +63,82 @@ ScrollTrigger.matchMedia({
       scrollTrigger: {
         trigger: ".section03",
         start: "top top",
-        end: "bottom top",
+        end: "bottom bottom",
         pin: true,
-        markers: true,
+        // markers: true,
         scrub: true,
         toggleActions: "play none restart none",
       },
     });
 
     // s3 오브젝트 그룹핑
-    var s3TitleGroup = document.querySelectorAll(".section03 .s2-title-group ");
-    // var s2Gopro = document.querySelector("#s2-gopro");
+    // var s3TitleGroup = document.querySelectorAll(".section03 .s2-title-group ");
+    // // var s2Gopro = document.querySelector("#s2-gopro");
 
-    ani03.fromTo(
-      ".sharing",
-      { y: 500, opacity: 0 },
-      { y: 0, duration: 0.8, ease: "power3.inOut", opacity: 1 },
-      0.4
-    );
-    ani03.fromTo(
-      ".world",
-      { y: 500, opacity: 0 },
-      { y: 0, duration: 0.8, ease: "power3.inOut", opacity: 1 },
-      0.4
-    );
-    ani03.fromTo(
-      ".here",
-      { y: 500, opacity: 0 },
-      { y: 0, duration: 0.8, ease: "power3.inOut", opacity: 1 },
-      0.4
-    );
-    ani03.fromTo(
-      ".you",
-      { y: 500, opacity: 0 },
-      { y: 0, duration: 0.8, ease: "power3.inOut", opacity: 1 },
-      0.4
-    );
-    ani03.fromTo(
-      ".aroud",
-      { y: 500, opacity: 0 },
-      { y: 0, duration: 0.8, ease: "power3.inOut", opacity: 1 },
-      0.4
-    );
+    // ani03.fromTo(
+    //   ".sharing",
+    //   { y: 500, opacity: 0 },
+    //   { y: 0, duration: 0.8, ease: "power3.inOut", opacity: 1 },
+    //   0.4
+    // );
+    // ani03.fromTo(
+    //   ".world",
+    //   { y: 500, opacity: 0 },
+    //   { y: 0, duration: 0.8, ease: "power3.inOut", opacity: 1 },
+    //   0.4
+    // );
+    // ani03.fromTo(
+    //   ".here",
+    //   { y: 500, opacity: 0 },
+    //   { y: 0, duration: 0.8, ease: "power3.inOut", opacity: 1 },
+    //   0.4
+    // );
+    // ani03.fromTo(
+    //   ".you",
+    //   { y: 500, opacity: 0 },
+    //   { y: 0, duration: 0.8, ease: "power3.inOut", opacity: 1 },
+    //   0.4
+    // );
+    // ani03.fromTo(
+    //   ".aroud",
+    //   { y: 500, opacity: 0 },
+    //   { y: 0, duration: 0.8, ease: "power3.inOut", opacity: 1 },
+    //   0.4
+    // );
 
     ani03.fromTo(".turned-line", { y: 0 }, { y: 600 }, 0);
-    ani03.fromTo(
-      ".force",
-      { y: 500, opacity: 0 },
-      { y: 0, duration: 0.8, ease: "power3.inOut", opacity: 1, delay: 3 }
-    );
+
+    // ani03.fromTo(
+    //   ".force",
+    //   { y: 500, opacity: 0 },
+    //   { y: 0, duration: 0.8, ease: "power3.inOut", opacity: 1, delay: 3 }
+    // );
+
+    // Section04
+    var ani04 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".section04",
+        start: "top top",
+        end: "bottom top",
+        pin: true,
+        markers: true,
+        // scrub: true,
+        toggleActions: "play none restart none",
+      },
+    });
+
+    // Section06
+    var ani06 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".section06",
+        start: "top top",
+        end: "bottom top",
+        pin: true,
+        markers: true,
+        // scrub: true,
+        toggleActions: "play none restart none",
+      },
+    });
 
     // Section08 : Cam-Detail-03 : ProLevel
     var ani08 = gsap.timeline({
