@@ -65,8 +65,8 @@ ScrollTrigger.matchMedia({
         start: "top top",
         end: "bottom bottom",
         pin: true,
-        // markers: true,
-        scrub: true,
+        markers: true,
+        // scrub: true,
         toggleActions: "play none restart none",
       },
     });
@@ -106,7 +106,49 @@ ScrollTrigger.matchMedia({
     //   0.4
     // );
 
-    ani03.fromTo(".turned-line", { y: 0 }, { y: 600 }, 0);
+    ani03.fromTo(
+      "#s3-exper path",
+      {
+        opacity: 0,
+        strokeDasharray: 500,
+        strokeDashoffset: 600,
+      },
+      {
+        opacity: 1,
+        duration: 2,
+        ease: "expo.inOut",
+        strokeDasharray: 0,
+        strokeDashoffset: 0,
+        onComplete: function () {
+          // "#s3-exper path" 애니메이션이 완료된 후에 실행될 코드
+          ani03.fromTo(
+            ".turned-line",
+            { y: 0 },
+            {
+              y: 600,
+              scrollTrigger: {
+                trigger: ".turned-line", // ScrollTrigger를 발동시킬 엘리먼트
+                start: "top center", // 시작 지점
+                end: "bottom center", // 끝나는 지점
+                scrub: true, // 스크롤 속도에 따라 애니메이션을 부드럽게 만듦
+              },
+            }
+          );
+        },
+      }
+    );
+    ani03.fromTo(
+      "#s3-exper",
+      {
+        fill: "transparent",
+      },
+      {
+        fill: "#f8f8f8",
+      },
+      2
+    );
+
+    // ani03.fromTo(".turned-line", { y: 0 }, { y: 600 }, 0);
 
     // ani03.fromTo(
     //   ".force",
@@ -301,3 +343,24 @@ $(function () {
 //   let scrollTop = container.scrollTop;
 //   $(".posNum").html(scrollTop);
 // });
+
+// GSAP ScrollTrigger
+let clamp = gsap.utils.clamp(-20, 20); // don't let the skew go beyond 20 degrees.
+
+gsap.to("#s18-wrapper .images img", {
+  scrollTrigger: {
+    trigger: "#s18-wrapper",
+    start: "top top",
+    end: "bottom bottom",
+    scrub: true,
+    onUpdate: (self) => {
+      let velocity = self.getVelocity() / -300; // Adjust the divisor to control the skew intensity
+      gsap.to("#s18-wrapper .images img", {
+        skewY: clamp(velocity),
+        immediateRender: false,
+      });
+    },
+    onRefresh: () =>
+      gsap.to("#s18-wrapper .images img", { skewY: 0, immediateRender: false }),
+  },
+});

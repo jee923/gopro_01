@@ -256,14 +256,14 @@ header {
   position: absolute;
   left: 193px;
   top: 390px;
-  animation: filled 0.8s ease forwards 1.2s;
+  /* animation: filled 0.8s ease forwards 1.2s; */
 }
 
-#s3-exper path {
+/* #s3-exper path {
   stroke-dasharray: 500px;
   stroke-dashoffset: 500px;
   animation: line-anim 2s ease forwards;
-}
+} */
 
 .section03 .world {
   position: absolute;
@@ -750,6 +750,7 @@ header {
   width: 1920px;
   height: 1940px;
   margin: auto;
+  overflow: hidden;
   /* background: var(--test-color); */
 }
 
@@ -883,12 +884,22 @@ header {
   position: absolute;
   left: 355px;
   top: 1589px;
+  font-family: "Druk Wide Trial", sans-serif;
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-style: italic;
+  text-wrap: nowrap;
 }
 
 .section08 .blue {
   position: absolute;
   left: 0px;
   top: 1702px;
+  font-family: "Druk Wide Trial", sans-serif;
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-style: italic;
+  text-wrap: nowrap;
 }
 
 .section08 .img02 {
@@ -904,6 +915,10 @@ header {
   font-family: "Druk Wide Trial", sans-serif;
   font-size: 6rem;
   text-transform: uppercase;
+  font-style: italic;
+  text-wrap: nowrap;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--white);
 }
 
 .section08 .blue-stroke {
@@ -913,6 +928,10 @@ header {
   font-family: "Druk Wide Trial", sans-serif;
   font-size: 6rem;
   text-transform: uppercase;
+  font-style: italic;
+  text-wrap: nowrap;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--white);
 }
 
 /* Section09 : Cam-Detail-04 : NailShot */
