@@ -2,42 +2,22 @@ body {
   width: 100%;
   height: auto;
   margin: auto;
-  /* overflow: hidden; */
-  background: var(--bg-black01);
+  overflow-x: hidden;
+  /* background: var(--bg-black01); */
   color: var(--white);
   background-image: linear-gradient(
     180deg,
     var(--bg-black01),
-    #111111,
     var(--bg-black01),
-    #111111,
     var(--bg-black02)
   );
 }
 
 .wrapper {
   background-repeat: repeat;
-  background-size: 90%;
+  background-size: 100%;
   background-image: url("../img/grid-bg.svg");
 }
-
-/* Cursor */
-/* #cursor {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 99999;
-  pointer-events: none;
-}
-
-#cursor > div {
-  border: 3px solid var(--test-color);
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  transform: scale(0.15);
-  background: var(--white);
-} */
 
 /* HEADER */
 
@@ -99,10 +79,11 @@ header .btn {
 
 .sidebar a:hover {
   color: var(--pc-blue);
+  transition: 0.4s;
 }
 
 /* FRAME */
-.frame {
+.frame-test {
   width: 100%;
   height: auto;
   margin: auto;
@@ -851,8 +832,8 @@ header .btn {
 
 .section08 .bit {
   position: absolute;
-  left: 1920px;
-  top: 1889px;
+  left: 1280px;
+  top: 2089px;
   font-family: "Druk Wide Trial", sans-serif;
   font-size: 6rem;
   text-transform: uppercase;
@@ -862,8 +843,8 @@ header .btn {
 
 .section08 .blue {
   position: absolute;
-  left: -2434px;
-  top: 1980px;
+  left: -1794px;
+  top: 2180px;
   font-family: "Druk Wide Trial", sans-serif;
   font-size: 6rem;
   text-transform: uppercase;
@@ -874,7 +855,7 @@ header .btn {
 .section08 .img02 {
   position: absolute;
   left: 815px;
-  top: 1636px;
+  top: 1836px;
 }
 
 .section08 .img02 img {
@@ -885,8 +866,8 @@ header .btn {
 
 .section08 .bit-stroke {
   position: absolute;
-  left: 1920px;
-  top: 1889px;
+  left: 1280px;
+  top: 2089px;
   font-family: "Druk Wide Trial", sans-serif;
   font-size: 6rem;
   text-transform: uppercase;
@@ -898,8 +879,8 @@ header .btn {
 
 .section08 .blue-stroke {
   position: absolute;
-  left: -2434px;
-  top: 1980px;
+  left: -1794px;
+  top: 2180px;
   font-family: "Druk Wide Trial", sans-serif;
   font-size: 6rem;
   text-transform: uppercase;
@@ -1544,53 +1525,56 @@ header .btn {
 .section18 {
   width: 1920px;
   height: 1020px;
+  position: relative;
   margin: auto;
+  overflow: hidden;
   /* background: var(--test-color); */
 }
 
-.section18_container {
+/* .section18_container {
   width: 100%;
-  height: 1020px;
+  height: auto;
   position: relative;
-  /* overflow: hidden; */
-}
-/* -------------- GSAP CODE START -------------- */
-/* #s18-wrapper {
   overflow: hidden;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
 } */
 
-/* #content {
+/* -------------- SKEW CODE START -------------- */
+#s18-wrapper {
+  /* overflow: hidden; */
+  position: absolute;
+  height: auto;
+  width: 100%;
+  /* top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; */
+}
+
+#s18-content {
   overflow: visible;
   width: 100%;
 }
 
-.section18 .text {
-  position: fixed;
-  top: 50vh;
+/* .section18 .text {
+  /* position: absolute; */
+/* top: 50vh;
   font-family: "Druk Wide Trial", sans-serif;
   font-style: italic;
   font-size: 4rem;
   text-align: center;
-  width: 100%;
-  transform: translateY(-100%);
+  /* justify-content: center; */
+/* transform: translateY(-100%);
   z-index: 2;
   color: var(--white);
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: var(--white);
   z-index: -2;
-}
+} */
 
 .section18 .outline-text {
   color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--white);
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: white;
   z-index: 2;
 }
 
@@ -1599,15 +1583,14 @@ header .btn {
   color: #804691;
   z-index: 2;
 }
-
-#s18-wrapper .images {
-  padding-top: 60vh;
+.section18 .s18-images {
+  /* padding-top: 30vh; */
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  /* max-width: 1600px; */
   margin: 0 auto;
-  min-height: 150vh;
-  height: 100%;
+  /* min-height: 150vh; */
+  height: 1800px;
   display: grid;
   grid-template-columns: repeat(20, 2%);
   grid-template-rows: repeat(30, 3%);
@@ -1618,53 +1601,55 @@ header .btn {
   object-fit: cover;
 }
 
-.content__slide-item {
+.s18-content__slide-item {
   width: 100%;
   height: 100%;
   position: relative;
 }
 
-img {
+#s18-wrapper img {
   width: 100%;
   height: 100%;
+  /* object-fit: contain; */
   object-fit: cover;
+  animation: float-obj 5s infinite alternate;
 }
 
-img:nth-child(1) {
+#s18-wrapper img:nth-child(1) {
   grid-area: 1/1/6/8;
 }
 
-img:nth-child(2) {
+#s18-wrapper img:nth-child(2) {
   grid-area: 3/12/8/20;
 }
 
-img:nth-child(3) {
+#s18-wrapper img:nth-child(3) {
   grid-area: 9/5/13/15;
 }
 
-img:nth-child(4) {
+#s18-wrapper img:nth-child(4) {
   grid-area: 14/1/18/8;
 }
 
-img:nth-child(5) {
+#s18-wrapper img:nth-child(5) {
   grid-area: 16/12/20/19;
 }
 
-img:nth-child(6) {
+#s18-wrapper img:nth-child(6) {
   grid-area: 20/2/25/9;
 }
 
-img:nth-child(7) {
+#s18-wrapper img:nth-child(7) {
   grid-area: 22/11/24/20;
 }
 
-img:nth-child(8) {
+#s18-wrapper img:nth-child(8) {
   grid-area: 26/5/30/15;
 }
 
-/* -------------- GSAP CODE END -------------- */
+/* -------------- SKEW CODE END -------------- */
 
-.section18 .img01 {
+/* .section18 .img01 {
   position: absolute;
   left: 828px;
   top: -42px;
@@ -1710,6 +1695,14 @@ img:nth-child(8) {
   position: absolute;
   left: 499px;
   top: 702px;
+} */
+
+.section18 .s18-text-group {
+  position: absolute;
+  /* width: 100%; */
+  display: flex;
+  z-index: 10;
+  mix-blend-mode: difference;
 }
 
 .section18 .get {

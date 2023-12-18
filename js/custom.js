@@ -20,6 +20,14 @@ document.addEventListener("DOMContentLoaded", function () {
             $(".sidebar").slideUp();
           }
         });
+
+        // Handle click events on sidebar links
+        $(".sidebar ul li a").click(function () {
+          // Close the sidebar
+          $(".sidebar").slideUp();
+          // Remove the "active" class from the button
+          $(".btn").removeClass("active");
+        });
       });
 
       // Section01 : Intro-Video
@@ -27,9 +35,8 @@ document.addEventListener("DOMContentLoaded", function () {
         scrollTrigger: {
           trigger: ".section01",
           start: () => "window.innerHeight",
-          // end: "bottom center",
+          end: "+=2000",
           pin: true,
-          // pinSpacing: true,
           scrub: 1,
           yoyo: true,
           toggleActions: "play none restart none",
@@ -45,8 +52,6 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
           clipPath: "circle(100% at 50% 50%)",
-          // ease: "expo.out",
-          // duration: 3,
         }
       );
 
@@ -58,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
           end: "+=2000",
           pin: true,
           // scrub: 1,
-          toggleActions: "play none restart none",
+          toggleActions: "play reverse restart none",
           // markers: true,
           id: "s02",
         },
@@ -92,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
           strokeDashoffset: 914,
         },
         {
-          duration: 1.4,
+          duration: 1.2,
           ease: "sine.inOut",
           strokeDashoffset: 0,
         },
@@ -120,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
           end: "+=2000",
           pin: true,
           // scrub: 1,
-          toggleActions: "play none restart none",
+          toggleActions: "play reverse restart none",
           // markers: true,
           id: "s03-1",
         },
@@ -147,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function () {
           strokeDashoffset: 914,
         },
         {
-          duration: 1.4,
+          duration: 1.2,
           ease: "sine.inOut",
           strokeDashoffset: 0,
         },
@@ -174,7 +179,7 @@ document.addEventListener("DOMContentLoaded", function () {
           // end: "+=1500",
           // pin: true,
           scrub: true,
-          toggleActions: "play none restart none",
+          toggleActions: "play reverse restart none",
           // markers: true,
           id: "s03-circle",
         },
@@ -207,7 +212,7 @@ document.addEventListener("DOMContentLoaded", function () {
           end: "+=2000",
           pin: true,
           // scrub: 1,
-          toggleActions: "play none restart none",
+          toggleActions: "play reverse restart none",
           // markers: true,
           id: "s03-2",
         },
@@ -234,7 +239,7 @@ document.addEventListener("DOMContentLoaded", function () {
           strokeDashoffset: 914,
         },
         {
-          duration: 1.4,
+          duration: 1.2,
           ease: "sine.inOut",
           strokeDashoffset: 0,
         },
@@ -274,11 +279,21 @@ document.addEventListener("DOMContentLoaded", function () {
           start: () => "window.innerHeight",
           pin: true,
           // scrub: 1,
-          toggleActions: "play none restart none",
-          markers: true,
+          toggleActions: "play reverse restart none",
+          // markers: true,
           id: "s05",
         },
       });
+
+      s05ani.fromTo(
+        ".section05 .img02 img",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+        }
+      );
 
       s05ani.fromTo(
         ".section05 .img01 img",
@@ -291,7 +306,8 @@ document.addEventListener("DOMContentLoaded", function () {
           y: 0,
           ease: "expo.out",
           duration: 2,
-        }
+        },
+        "<"
       );
 
       s05ani.fromTo(
@@ -334,7 +350,7 @@ document.addEventListener("DOMContentLoaded", function () {
           trigger: ".s6-container",
           pin: true,
           scrub: 1,
-          markers: true,
+          // markers: true,
           id: "가로",
           snap: 1 / (s6Sections.length - 1),
           end: () => "+=" + document.querySelector(".s6-container").offsetWidth,
@@ -489,10 +505,10 @@ document.addEventListener("DOMContentLoaded", function () {
       s08aniO.fromTo(
         ".section08 .new-g",
         {
-          y: 200,
+          y: 400,
         },
         {
-          y: -200,
+          y: -100,
         },
         "-="
       );
@@ -501,7 +517,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ".section08 .bit-g",
         { y: 600 },
         {
-          y: -200,
+          y: -300,
         },
         "<"
       );
@@ -510,7 +526,7 @@ document.addEventListener("DOMContentLoaded", function () {
         scrollTrigger: {
           trigger: ".section08 .stun-g .img01",
           start: () => "window.innerHeight",
-          end: "+=1300",
+          end: "+=1500",
           pin: false,
           scrub: 1,
           toggleActions: "play none restart none",
@@ -604,7 +620,7 @@ document.addEventListener("DOMContentLoaded", function () {
           pin: true,
           scrub: 1,
           toggleActions: "play none restart none",
-          markers: true,
+          // markers: true,
           id: "s10",
         },
       });
@@ -629,7 +645,7 @@ document.addEventListener("DOMContentLoaded", function () {
           start: () => "window.innerHeight",
           pin: true,
           // scrub: 1,
-          toggleActions: "play none none none",
+          toggleActions: "play reverse restart none",
           // markers: true,
           id: "s12",
         },
@@ -671,7 +687,7 @@ document.addEventListener("DOMContentLoaded", function () {
           duration: 0.6,
           ease: "sine.out",
         },
-        0.5
+        0.3
       );
 
       s12ani.fromTo(
@@ -692,7 +708,7 @@ document.addEventListener("DOMContentLoaded", function () {
           start: "40% 20%",
           // pin: true,
           scrub: 2,
-          toggleActions: "play none restart none",
+          toggleActions: "play reverse restart none",
           // markers: true,
           id: "s12-렌즈",
         },
@@ -771,7 +787,7 @@ document.addEventListener("DOMContentLoaded", function () {
           trigger: ".s15-container",
           pin: true,
           scrub: 1,
-          markers: true,
+          // markers: true,
           id: "가로",
           snap: 1 / (s15Sections.length - 1),
           end: () =>
@@ -784,6 +800,7 @@ document.addEventListener("DOMContentLoaded", function () {
         scrollTrigger: {
           trigger: ".section17",
           start: () => "window.innerHeight",
+          end: "+=2000",
           pin: true,
           // scrub: 1,
           toggleActions: "play none restart none",
@@ -867,6 +884,67 @@ document.addEventListener("DOMContentLoaded", function () {
           duration: 2,
           ease: "back.out",
           fill: "#f8f8f8",
+        },
+        "<"
+      );
+
+      // Section18
+
+      // GSAP ScrollTrigger
+      let clamp = gsap.utils.clamp(-20, 20); // don't let the skew go beyond 20 degrees.
+
+      gsap.to("#s18-wrapper .s18-images img", {
+        scrollTrigger: {
+          trigger: ".section18",
+          start: "top top",
+          // end: "bottom bottom",
+          scrub: 3,
+          // markers: true,
+          id: "s18-이미지",
+          onUpdate: (self) => {
+            let velocity = self.getVelocity() / -300; // Adjust the divisor to control the skew intensity
+            gsap.to("#s18-wrapper .s18-images img", {
+              skewY: clamp(velocity),
+              immediateRender: false,
+            });
+          },
+          onRefresh: () =>
+            gsap.to("#s18-wrapper .s18-images img", {
+              skewY: 0,
+              immediateRender: false,
+            }),
+        },
+      });
+
+      const s18ani = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".section18",
+          start: () => "window.innerHeight",
+          pin: true,
+          scrub: 3,
+          yoyo: true,
+          toggleActions: "play none restart none",
+          // markers: true,
+          id: "s18",
+        },
+      });
+
+      s18ani.fromTo(
+        ".frame",
+        {
+          opacity: 1,
+        },
+        { opacity: 0 },
+        -1
+      );
+
+      s18ani.fromTo(
+        "#s18-wrapper",
+        {
+          y: 800,
+        },
+        {
+          y: -600,
         },
         "<"
       );
