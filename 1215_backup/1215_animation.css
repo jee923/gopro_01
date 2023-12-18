@@ -5,7 +5,7 @@
   }
 }
 
-@keyframes filled-line {
+@keyframes filled {
   from {
     fill: transparent;
   }
@@ -31,19 +31,11 @@
   }
 }
 
-/* 둥둥 떠다니게 */
 @keyframes float-obj {
   0% {
     transform: translate(0, 0);
   }
   100% {
     transform: translate(0, -15px);
-  }
-}
-
-/* 빙글빙글 */
-@keyframes rotate-circle {
-  100% {
-    transform: rotate(360deg);
   }
 }

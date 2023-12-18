@@ -1,21 +1,12 @@
 body {
   width: 100%;
-  height: auto;
+  height: 100vh;
   margin: auto;
   background: var(--bg-black01);
   color: var(--white);
-  background-image: linear-gradient(
-    180deg,
-    var(--bg-black01),
-    #111111,
-    var(--bg-black01)
-  );
-}
-
-.wrapper {
+  /* background-image: url("../img/grid.svg");
   background-repeat: repeat;
-  background-size: 90%;
-  background-image: url("../img/grid-bg.svg");
+  background-size: contain; */
 }
 
 /* Cursor */
@@ -47,10 +38,6 @@ header {
   top: 0;
   background: transparent;
   z-index: 9999;
-}
-
-header .btn {
-  padding: 1rem 0 1rem 1rem;
 }
 
 .gnb {
@@ -94,10 +81,6 @@ header .btn {
   padding: 2rem;
 }
 
-.sidebar a:hover {
-  color: var(--pc-blue);
-}
-
 /* FRAME */
 .frame {
   width: 100%;
@@ -108,7 +91,7 @@ header .btn {
   justify-content: center;
   top: 100px;
   margin: 0 auto;
-  z-index: 9996;
+  z-index: 9997;
 }
 
 .frame img {
@@ -209,7 +192,7 @@ header .btn {
   position: absolute;
   left: 355px;
   top: 565px;
-  animation: filled-line 0.8s ease forwards 1.2s;
+  animation: filled 0.8s ease forwards 1.2s;
 }
 
 #s2-gopro path {
@@ -273,7 +256,7 @@ header .btn {
   position: absolute;
   left: 193px;
   top: 390px;
-  /* animation: filled-line 0.8s ease forwards 1.2s; */
+  /* animation: filled 0.8s ease forwards 1.2s; */
 }
 
 /* #s3-exper path {
@@ -336,7 +319,7 @@ header .btn {
   position: absolute;
   left: 654px;
   top: 1409px;
-  animation: filled-line 0.8s ease forwards 1.2s;
+  animation: filled 0.8s ease forwards 1.2s;
 }
 
 #s3-posit path {
@@ -667,27 +650,23 @@ header .btn {
 /* Section07 : Cam-Detail-02 : LargerSensor */
 .section07 {
   width: 1920px;
-  height: 1020px;
-  overflow: hidden;
-  /* height: 2750px; */
+  height: 2750px;
   margin: auto;
-  background-image: url("../img/s7-bg.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-attachment: fixed;
+  /* background: var(--test-color); */
 }
 
 .section07_container {
   width: 100%;
-  height: 100%;
+  height: auto;
   position: relative;
   /* overflow: hidden; */
 }
 
-.section07 .s7-text-group {
+.section07 .bg {
+  width: 100%;
   position: absolute;
-  left: 0px;
-  top: 580px;
+  left: 0;
+  top: 26px;
 }
 
 .section07 .larger {
@@ -705,49 +684,49 @@ header .btn {
 .section07 .field {
   position: absolute;
   left: 646px;
-  top: 772px;
+  top: 572px;
 }
 
 .section07 .the {
   position: absolute;
   left: 582px;
-  top: 946px;
+  top: 746px;
 }
 
 .section07 .shoot {
   position: absolute;
   left: 522px;
-  top: 1363px;
+  top: 963px;
 }
 
 .section07 .with {
   position: absolute;
   left: 520px;
-  top: 1537px;
+  top: 1137px;
 }
 
 .section07 .ultra {
   position: absolute;
   left: 635px;
-  top: 2090px;
+  top: 1490px;
 }
 
 .section07 .hyper {
   position: absolute;
   left: 633px;
-  top: 2263px;
+  top: 1663px;
 }
 
 .section07 .lets {
   position: absolute;
   left: 525px;
-  top: 3003px;
+  top: 2003px;
 }
 
 .section07 .do {
   position: absolute;
   left: 781px;
-  top: 3087px;
+  top: 2087px;
 }
 
 .section07 .video-wrapper {
@@ -756,26 +735,23 @@ header .btn {
   /* overflow: hidden; */
   border-radius: 1rem;
   position: absolute;
-  display: flex;
-  left: 50%;
-  top: 30%;
-  transform: translateX(-50%);
-  /* left: 678px;
-  top: 326px; */
+  left: 678px;
+  top: 326px;
 }
 
 .section07 .video-wrapper video {
   width: 100%;
   border-radius: 7rem;
-  /* mix-blend-mode: lighten; */
+  mix-blend-mode: lighten;
 }
 
 /* Section08 : Cam-Detail-03 : ProLevel */
 .section08 {
   width: 1920px;
-  height: 2020px;
+  height: 1940px;
   margin: auto;
   overflow: hidden;
+  /* background: var(--test-color); */
 }
 
 .section08_container {
@@ -790,7 +766,7 @@ header .btn {
   height: 841px;
   position: absolute;
   left: 585px;
-  top: 252px;
+  top: -52px;
 }
 
 .section08 .bg02 {
@@ -798,41 +774,30 @@ header .btn {
   height: 835px;
   position: absolute;
   left: 190px;
-  top: 950px;
+  top: 650px;
 }
 
-.section08 span {
+.section08 .title span {
   font-family: "Druk Wide Trial", sans-serif;
   font-style: italic;
   text-transform: uppercase;
-  text-wrap: nowrap;
 }
 
-/* title font-size */
-.section08 .pro-g > span {
+.section08 .pro {
   font-size: 8rem;
-  letter-spacing: 10px;
+  position: absolute;
+  left: 193px;
+  top: 257px;
 }
 
-.section08 .pro-g .pro {
+.section08 .level {
+  font-size: 8rem;
   position: absolute;
   left: 190px;
-  top: 557px;
-}
-
-.section08 .pro-g .level {
-  position: absolute;
-  left: 180px;
-  top: 706px;
+  top: 406px;
   display: inline-block;
-  color: var(--bg-black01);
-  text-shadow: -2px -2px 0 var(--white), 2px -2px 0 var(--white),
-    -2px 2px 0 var(--white), 2px 2px 0 var(--white);
-}
-
-/* 일반 font-size */
-.section08 .title {
-  font-size: 1.5rem;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--white);
 }
 
 .section08 .img01 {
@@ -841,49 +806,52 @@ header .btn {
   overflow: hidden;
   position: absolute;
   left: 1125px;
-  top: 601px;
+  top: 301px;
 }
 
 .section08 .img01 img {
   width: 100%;
 }
 
+.section08 .title .text-group {
+  font-size: 1.5rem;
+  text-wrap: nowrap;
+}
+
 .section08 .stun {
   position: absolute;
   left: 1124px;
-  top: 836px;
+  top: 536px;
   display: inline-block;
-  color: var(--bg-black01);
-  text-shadow: -1px -1px 0 var(--white), 1px -1px 0 var(--white),
-    -1px 1px 0 var(--white), 1px 1px 0 var(--white);
+  color: transparent;
+  -webkit-text-stroke: 1px var(--white);
 }
 
 .section08 .twmp {
   position: absolute;
-  left: 1122px;
-  top: 869px;
+  left: 1125px;
+  top: 569px;
 }
 
 .section08 .grab {
   position: absolute;
-  left: 1122px;
-  top: 901px;
+  left: 1125px;
+  top: 601px;
 }
 
 .section08 .new {
   position: absolute;
   left: 192px;
-  top: 1093px;
+  top: 793px;
   display: inline-block;
-  color: var(--bg-black01);
-  text-shadow: -1px -1px 0 var(--white), 1px -1px 0 var(--white),
-    -1px 1px 0 var(--white), 1px 1px 0 var(--white);
+  color: transparent;
+  -webkit-text-stroke: 1px var(--white);
 }
 
 .section08 .time {
   position: absolute;
-  left: 190px;
-  top: 1126px;
+  left: 195px;
+  top: 826px;
 }
 
 .section08 .img02 {
@@ -892,7 +860,7 @@ header .btn {
   overflow: hidden;
   position: absolute;
   left: 815px;
-  top: 1636px;
+  top: 1336px;
 }
 
 .section08 .img02 img {
@@ -905,7 +873,7 @@ header .btn {
   overflow: hidden;
   position: absolute;
   left: 193px;
-  top: 1164px;
+  top: 864px;
 }
 
 .section08 .video-wrapper video {
@@ -914,8 +882,8 @@ header .btn {
 
 .section08 .bit {
   position: absolute;
-  left: 1920px;
-  top: 1889px;
+  left: 355px;
+  top: 1589px;
   font-family: "Druk Wide Trial", sans-serif;
   font-size: 6rem;
   text-transform: uppercase;
@@ -925,8 +893,8 @@ header .btn {
 
 .section08 .blue {
   position: absolute;
-  left: -2434px;
-  top: 1980px;
+  left: 0px;
+  top: 1702px;
   font-family: "Druk Wide Trial", sans-serif;
   font-size: 6rem;
   text-transform: uppercase;
@@ -937,32 +905,26 @@ header .btn {
 .section08 .img02 {
   position: absolute;
   left: 815px;
-  top: 1636px;
-}
-
-.section08 .img02 img {
-  width: 130%;
-  display: flex;
-  align-items: center;
+  top: 1336px;
 }
 
 .section08 .bit-stroke {
   position: absolute;
-  left: 1920px;
-  top: 1889px;
+  left: 355px;
+  top: 1589px;
   font-family: "Druk Wide Trial", sans-serif;
   font-size: 6rem;
   text-transform: uppercase;
   font-style: italic;
   text-wrap: nowrap;
   color: transparent;
-  -webkit-text-stroke: 3px var(--white);
+  -webkit-text-stroke: 2px var(--white);
 }
 
 .section08 .blue-stroke {
   position: absolute;
-  left: -2434px;
-  top: 1980px;
+  left: 0px;
+  top: 1702px;
   font-family: "Druk Wide Trial", sans-serif;
   font-size: 6rem;
   text-transform: uppercase;
@@ -977,8 +939,6 @@ header .btn {
   width: 1920px;
   height: 1020px;
   margin: auto;
-  z-index: 9997;
-  /* overflow: hidden; */
   /* background: var(--test-color); */
 }
 
@@ -1019,22 +979,8 @@ header .btn {
   top: 245px;
 }
 
-.section09 .img01 img {
-  scale: 0.8;
-  animation: rotate-circle 5s cubic-bezier(0.6, -0.28, 0.735, 0.045) infinite;
-}
-
-.section09 .imgs {
-  scale: 0.5;
-}
-
-.section09 .imgs img:hover {
-  scale: 1.5;
-  transition: 0.8s ease-out;
-}
-
-.section09 .imgs img:not(:hover) {
-  transition: 0.5s ease-out;
+.section09 .imgs img {
+  width: 80%;
 }
 
 .section09 .img02 {
@@ -1043,18 +989,10 @@ header .btn {
   top: 515px;
 }
 
-.section09 .img02 img {
-  animation: rotate-circle 5s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
-}
-
 .section09 .img03 {
   position: absolute;
   left: 307px;
   top: 138px;
-}
-
-.section09 .img03 img {
-  animation: rotate-circle 3s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
 }
 
 .section09 .img04 {
@@ -1062,21 +1000,18 @@ header .btn {
   left: 639px;
   top: 721px;
 }
-.section09 .img04 img {
-  animation: rotate-circle 3s cubic-bezier(0.6, 0, 0.735, 0.4) infinite;
-}
 
 /* Section10 : Cam-Detail-05 : NightEffects */
 .section10 {
   width: 1920px;
-  height: 1620px;
+  height: 1020px;
   margin: auto;
   background: var(--bg-black02);
 }
 
 .section10_container {
   width: 100%;
-  height: 100%;
+  height: 1020px;
   position: relative;
   overflow: hidden;
 }
@@ -1084,7 +1019,7 @@ header .btn {
 .section10 .night {
   position: absolute;
   left: 330px;
-  top: 648px;
+  top: 348px;
 }
 
 .section10 .video-wrapper01 {
@@ -1094,7 +1029,7 @@ header .btn {
   border-radius: 0.625rem;
   position: absolute;
   left: 785px;
-  top: 645px;
+  top: 345px;
 }
 
 .section10 .video-wrapper01 video {
@@ -1104,13 +1039,13 @@ header .btn {
 .section10 .push {
   position: absolute;
   left: 323px;
-  top: 785px;
+  top: 485px;
 }
 
 .section10 .button {
   position: absolute;
   left: 323px;
-  top: 916px;
+  top: 616px;
 }
 
 .section10 .video-wrapper02 {
@@ -1120,7 +1055,7 @@ header .btn {
   border-radius: 0.625rem;
   position: absolute;
   left: 1225px;
-  top: 788px;
+  top: 488px;
 }
 
 .section10 .video-wrapper02 video {
@@ -1130,7 +1065,7 @@ header .btn {
 .section10 .star {
   position: absolute;
   left: 1210px;
-  top: 917px;
+  top: 617px;
 }
 
 .section10 .video-wrapper03 {
@@ -1140,7 +1075,7 @@ header .btn {
   border-radius: 0.625rem;
   position: absolute;
   left: 447px;
-  top: 917px;
+  top: 617px;
 }
 
 .section10 .video-wrapper03 video {
@@ -1172,27 +1107,29 @@ header .btn {
   width: 1920px;
   height: 1020px;
   margin: auto;
+  background-image: url("../img/grid.svg");
+  background-repeat: repeat;
+  background-size: contain;
+  /* background: var(--test-color); */
 }
 
 .section12_container {
   width: 100%;
   height: 1020px;
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .section12 .img01 {
   position: absolute;
   left: 1152px;
   top: 257px;
-  animation: float-obj 1.5s infinite alternate;
 }
 
 .section12 .img02 {
   position: absolute;
   left: 316px;
   top: 649px;
-  animation: float-obj 3s infinite alternate;
 }
 
 .section12 .upgrade {
@@ -1284,9 +1221,9 @@ header .btn {
   width: 1920px;
   height: 1020px;
   margin: auto;
-  /* background-image: url("../img/grid.svg");
+  background-image: url("../img/grid.svg");
   background-repeat: repeat;
-  background-size: contain; */
+  background-size: contain;
   /* background: var(--test-color); */
 }
 
@@ -1305,31 +1242,31 @@ header .btn {
 
 .section14 .wide {
   position: absolute;
-  left: 1362px;
+  left: 1482px;
   top: 424px;
 }
 
 .section14 .ang {
   position: absolute;
-  left: 1140px;
+  left: 1260px;
   top: 487px;
 }
 
 .section14 .ultra {
   position: absolute;
-  left: 1257px;
+  left: 1377px;
   top: 412px;
 }
 
 .section14 .four {
   position: absolute;
-  left: 1482px;
+  left: 1602px;
   top: 542px;
 }
 
 .section14 .in {
   position: absolute;
-  left: 1450px;
+  left: 1570px;
   top: 543px;
 }
 
@@ -1556,7 +1493,7 @@ header .btn {
   width: 1920px;
   height: 1020px;
   margin: auto;
-  background: var(--bg-black02);
+  /* background: var(--test-color); */
 }
 
 .section17_container {
@@ -1573,12 +1510,11 @@ header .btn {
   position: absolute;
   left: 957px;
   top: 198px;
-  mix-blend-mode: lighten;
 }
 
 .section17 .video-wrapper video {
   width: 100%;
-  border-radius: 10rem;
+  border-radius: 1.5rem;
   mix-blend-mode: lighten;
 }
 
@@ -1588,16 +1524,55 @@ header .btn {
   top: 305px;
 }
 
+#smaller {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  animation: filled 0.8s ease forwards 1.2s;
+}
+
+#smaller path {
+  stroke-dasharray: 500px;
+  stroke-dashoffset: 500px;
+  animation: line-anim 2s ease forwards;
+}
+
 .section17 .lighter {
   position: absolute;
   left: 249px;
   top: 481px;
 }
 
+#lighter {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  animation: filled 0.8s ease forwards 1.2s;
+}
+
+#lighter path {
+  stroke-dasharray: 500px;
+  stroke-dashoffset: 500px;
+  animation: line-anim 2s ease forwards;
+}
+
 .section17 .tougher {
   position: absolute;
   left: 255px;
   top: 657px;
+}
+
+#tougher {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  animation: filled 0.8s ease forwards 1.2s;
+}
+
+#tougher path {
+  stroke-dasharray: 500px;
+  stroke-dashoffset: 500px;
+  animation: line-anim 2s ease forwards;
 }
 
 /* Section18 : Lens-Outro */
