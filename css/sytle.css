@@ -2,13 +2,16 @@ body {
   width: 100%;
   height: auto;
   margin: auto;
+  /* overflow: hidden; */
   background: var(--bg-black01);
   color: var(--white);
   background-image: linear-gradient(
     180deg,
     var(--bg-black01),
     #111111,
-    var(--bg-black01)
+    var(--bg-black01),
+    #111111,
+    var(--bg-black02)
   );
 }
 
@@ -209,13 +212,7 @@ header .btn {
   position: absolute;
   left: 355px;
   top: 565px;
-  animation: filled-line 0.8s ease forwards 1.2s;
-}
-
-#s2-gopro path {
-  stroke-dasharray: 500px;
-  stroke-dashoffset: 500px;
-  animation: line-anim 2s ease forwards;
+  /* animation: filled-line 0.8s ease forwards 1.2s; */
 }
 
 .section02 .years {
@@ -263,24 +260,11 @@ header .btn {
   top: 277px;
 }
 
-/* .section03 .exper {
-  position: absolute;
-  left: 193px;
-  top: 390px;
-} */
-
 #s3-exper {
   position: absolute;
   left: 193px;
   top: 390px;
-  /* animation: filled-line 0.8s ease forwards 1.2s; */
 }
-
-/* #s3-exper path {
-  stroke-dasharray: 500px;
-  stroke-dashoffset: 500px;
-  animation: line-anim 2s ease forwards;
-} */
 
 .section03 .world {
   position: absolute;
@@ -308,47 +292,38 @@ header .btn {
 
 /* Below Contents */
 
+.section03 .s03-title-g02 {
+  opacity: 0%;
+}
+
 .section03 .founded {
   position: absolute;
   left: 448px;
-  top: 1094px;
+  top: 1144px;
 }
 
 .section03 .we {
   position: absolute;
   left: 1128px;
-  top: 1560px;
+  top: 1670px;
 }
 
 .section03 .force {
   position: absolute;
   left: 764px;
-  top: 1320px;
+  top: 1430px;
 }
-
-/* .section03 .posit {
-  position: absolute;
-  left: 654px;
-  top: 1409px;
-} */
 
 #s3-posit {
   position: absolute;
   left: 654px;
-  top: 1409px;
-  animation: filled-line 0.8s ease forwards 1.2s;
-}
-
-#s3-posit path {
-  stroke-dasharray: 500px;
-  stroke-dashoffset: 500px;
-  animation: line-anim 2s ease forwards;
+  top: 1519px;
 }
 
 .section03 .for {
   position: absolute;
   left: 1025px;
-  top: 1537px;
+  top: 1647px;
 }
 
 /* Section04 : Cam-Intro-Video */
@@ -385,13 +360,13 @@ header .btn {
   /* overflow: hidden;*/
 }
 
-.section05 .photo01 {
+.section05 .img01 {
   position: absolute;
   left: 240px;
   top: 135px;
 }
 
-.section05 .photo02 {
+.section05 .img02 {
   position: absolute;
   left: 761px;
   top: 203px;
@@ -428,11 +403,19 @@ header .btn {
   top: 711px;
 }
 
-/* Section06 : Cam-Detail-01 : 5.3K */
+/* S6-Horizontal Container */
+.s6-container {
+  margin: auto;
+  width: 5760px;
+  height: 1020px;
+  display: flex;
+  flex-wrap: nowrap;
+}
 
+/* Section06 : Cam-Detail-01 : 5.3K */
 .section06 {
   width: 1920px;
-  height: 1080px;
+  height: 1020px;
   margin: auto;
   /* background: var(--test-color); */
 }
@@ -448,9 +431,9 @@ header .btn {
   width: 100%;
   height: auto;
   overflow: hidden;
-  position: absolute;
+  /* position: absolute;
   left: 0px;
-  top: 0px;
+  top: 0px; */
 }
 
 .section06 .video-wrapper video {
@@ -460,72 +443,25 @@ header .btn {
 .section06 .five-stroke {
   position: absolute;
   left: 471px;
-  top: 333px;
+  top: 352px;
 }
 
 .section06 .jaw {
   position: absolute;
   left: 574px;
-  top: 614px;
+  top: 633px;
 }
 
 .section06 .video {
   position: absolute;
   left: 1072px;
-  top: 526px;
-}
-
-/* Section06-1 : Cam-Detail-01 (Horizon START) */
-
-.section06-1 {
-  width: 1920px;
-  height: 1080px;
-  margin: auto;
-  /* background: var(--test-color); */
-}
-
-.section06-1_container {
-  width: 100%;
-  height: auto;
-  position: relative;
-  /* overflow: hidden; */
-}
-
-.section06-1 .video-wrapper {
-  width: 1298px;
-  height: 730px;
-  overflow: hidden;
-  position: absolute;
-  left: 311px;
-  top: 111px;
-}
-
-.section06-1 .video-wrapper video {
-  width: 100%;
-}
-
-.section06-1 .five {
-  position: absolute;
-  left: 764px;
-  top: 737px;
-}
-
-.section06-1 .jaw {
-  position: absolute;
-  left: 804px;
-  top: 847px;
-}
-
-.section06-1 .video {
-  position: absolute;
-  left: 1003px;
-  top: 812px;
+  top: 545px;
 }
 
 /* Section06-2 : Cam-Detail-01 : Slo-Proof (Horizon) */
 .section06-2 {
   width: 1920px;
-  height: 1080px;
+  height: 1020px;
   margin: auto;
   /* background: var(--test-color); */
 }
@@ -542,7 +478,7 @@ header .btn {
   height: 371px;
   overflow: hidden;
   position: absolute;
-  left: 210px;
+  left: 118px;
   top: 150px;
   display: flex;
   align-items: center;
@@ -555,49 +491,49 @@ header .btn {
 
 .section06-2 .eight {
   position: absolute;
-  left: 598px;
+  left: 505px;
   top: 451px;
 }
 
 .section06-2 .slo {
   position: absolute;
-  left: 493px;
+  left: 401px;
   top: 527px;
 }
 
 .section06-2 .up {
   position: absolute;
-  left: 503px;
+  left: 410px;
   top: 480px;
 }
 
 .section06-2 .img01 {
   position: absolute;
-  left: 896px;
+  left: 772px;
   top: 318px;
 }
 
 .section06-2 .dura {
   position: absolute;
-  left: 668px;
+  left: 544px;
   top: 526px;
 }
 
 .section06-2 .water {
   position: absolute;
-  left: 820px;
+  left: 696px;
   top: 582px;
 }
 
 .section06-2 .ultra {
   position: absolute;
-  left: 625px;
+  left: 501px;
   top: 750px;
 }
 
 .section06-2 .feet {
   position: absolute;
-  left: 1617px;
+  left: 1493px;
   top: 281px;
 }
 
@@ -612,7 +548,7 @@ header .btn {
 
 .section06-3_container {
   width: 100%;
-  height: 1020px;
+  height: auto;
   position: relative;
   /* overflow: hidden; */
 }
@@ -654,7 +590,7 @@ header .btn {
 
 .section06-3 .stab {
   position: absolute;
-  left: 1055px;
+  left: 1054px;
   top: 481px;
 }
 
@@ -754,7 +690,7 @@ header .btn {
   width: 564px;
   height: 397px;
   /* overflow: hidden; */
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
   position: absolute;
   display: flex;
   left: 50%;
@@ -766,14 +702,15 @@ header .btn {
 
 .section07 .video-wrapper video {
   width: 100%;
-  border-radius: 7rem;
+  border-radius: 156px 150px 150px 150px;
+  clip-path: polygon(5% 6%, 94% 5%, 94% 94%, 6% 94%);
   /* mix-blend-mode: lighten; */
 }
 
 /* Section08 : Cam-Detail-03 : ProLevel */
 .section08 {
   width: 1920px;
-  height: 2020px;
+  height: 2520px;
   margin: auto;
   overflow: hidden;
 }
@@ -1029,7 +966,7 @@ header .btn {
 }
 
 .section09 .imgs img:hover {
-  scale: 1.5;
+  scale: 2;
   transition: 0.8s ease-out;
 }
 
@@ -1084,7 +1021,7 @@ header .btn {
 .section10 .night {
   position: absolute;
   left: 330px;
-  top: 648px;
+  top: 348px;
 }
 
 .section10 .video-wrapper01 {
@@ -1094,7 +1031,7 @@ header .btn {
   border-radius: 0.625rem;
   position: absolute;
   left: 785px;
-  top: 645px;
+  top: 345px;
 }
 
 .section10 .video-wrapper01 video {
@@ -1104,13 +1041,13 @@ header .btn {
 .section10 .push {
   position: absolute;
   left: 323px;
-  top: 785px;
+  top: 485px;
 }
 
 .section10 .button {
   position: absolute;
   left: 323px;
-  top: 916px;
+  top: 616px;
 }
 
 .section10 .video-wrapper02 {
@@ -1120,7 +1057,7 @@ header .btn {
   border-radius: 0.625rem;
   position: absolute;
   left: 1225px;
-  top: 788px;
+  top: 488px;
 }
 
 .section10 .video-wrapper02 video {
@@ -1130,7 +1067,7 @@ header .btn {
 .section10 .star {
   position: absolute;
   left: 1210px;
-  top: 917px;
+  top: 617px;
 }
 
 .section10 .video-wrapper03 {
@@ -1140,7 +1077,7 @@ header .btn {
   border-radius: 0.625rem;
   position: absolute;
   left: 447px;
-  top: 917px;
+  top: 617px;
 }
 
 .section10 .video-wrapper03 video {
@@ -1333,20 +1270,29 @@ header .btn {
   top: 543px;
 }
 
+/* S15-Horizontal Container */
+.s15-container {
+  /* margin: auto; */
+  width: 3480px;
+  height: 1020px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 /* Section15 : Lens-Detail-03 : Vertical (Horizon) */
 .section15 {
   width: 1920px;
   height: 1020px;
   margin: auto;
-  background-image: url("../img/grid.svg");
+  /* background-image: url("../img/grid.svg");
   background-repeat: repeat;
-  background-size: contain;
+  background-size: contain; */
   /* background: var(--test-color); */
 }
 
 .section15_container {
   width: 100%;
-  height: 1020px;
+  height: auto;
   position: relative;
   /* overflow: hidden; */
 }
@@ -1440,7 +1386,7 @@ header .btn {
 
 /* S15-3 TimeWarp */
 
-.section15 .video-wrapper03 {
+/* .section15 .video-wrapper03 {
   width: 441px;
   height: 332px;
   overflow: hidden;
@@ -1451,9 +1397,9 @@ header .btn {
 }
 
 .section15 .video-wrapper03 video {
-  width: 100%;
-  /* mix-blend-mode: lighten; */
-}
+  width: 100%; */
+/* mix-blend-mode: lighten; */
+/* }
 
 .section15 .warp {
   position: absolute;
@@ -1465,31 +1411,16 @@ header .btn {
   position: absolute;
   left: 2000px;
   top: 630px;
-}
-
-/* Section15-1 : Lens-Detail-03 : Vertical (Horizon END) */
-.section15 {
-  width: 1920px;
-  height: 1020px;
-  margin: auto;
-  /* background: var(--test-color); */
-}
-
-.section15_container {
-  width: 100%;
-  height: 1020px;
-  position: relative;
-  /* overflow: hidden; */
-}
+} */
 
 /* Section16 : Lens-Detail-03 : Vertical (Horizon END) */
 .section16 {
   width: 1920px;
   height: 1020px;
   margin: auto;
-  background-image: url("../img/grid.svg");
+  /* background-image: url("../img/grid.svg");
   background-repeat: repeat;
-  background-size: contain;
+  background-size: contain; */
   /* background: var(--test-color); */
 }
 
@@ -1498,6 +1429,15 @@ header .btn {
   height: 1020px;
   position: absolute;
   /* overflow: hidden; */
+}
+
+.section16 .video-wrapper {
+  width: 1500px;
+  height: 800px;
+  overflow: hidden;
+  position: absolute;
+  left: 210px;
+  top: 126px;
 }
 
 .section16 .video-wrapper {
@@ -1804,7 +1744,7 @@ footer {
   position: relative;
   margin-bottom: 0.5rem;
   background: transparent;
-  z-index: 9998;
+  z-index: 9993;
 }
 
 .footer {
@@ -1815,7 +1755,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--bg-black01);
+  /* background: var(--bg-black01); */
 }
 
 .footer .sns {
@@ -1832,23 +1772,3 @@ footer {
 .footer .sns li i {
   font-size: 1.25rem;
 }
-
-/* ------- 혜민님 가로스크롤 ----------- */
-/* 가로스크롤 */
-/* .horizontal-scroll {
-  overflow: hidden;
-  width: 100%; 수정: 가로 크기를 100%로 변경 */
-/* position: relative;
-  margin: 0 auto;
-}
-
-.horizontal {
-  width: fit-content;
-  display: flex;
-  width: 6000px; */
-/* width: 6000px;
-  display: flex;
-  flex-wrap: nowrap;
-  width: max-content; /* 수정: 가로 크기를 100%로 변경 */
-/* scroll-snap-type: x mandatory; 추가: 스크롤 스냅 기능 활성화 */
-/* } */

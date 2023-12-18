@@ -37,3 +37,15 @@
    S17 구현 (Smaller)
    S12 구현 (Lens-Main)
    S7, 8 수정
+
+-- Version 0.0.7 : 231218
+
+1. S1 구현 (Intro)
+
+- 추후 효과 더 넣기
+  S2 구현 (Brand-Main)
+  S3 구현 (Brand-Detail)
+  S4 구현 (Cam-Intro-video)
+  S5 구현 (Cam-Main)
+  S6, S15 가로 스크롤 임시 구현
+  메뉴 클릭시 섹션 이동 구현

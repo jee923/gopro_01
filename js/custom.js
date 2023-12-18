@@ -22,6 +22,360 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       });
 
+      // Section01 : Intro-Video
+      const s01ani = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".section01",
+          start: () => "window.innerHeight",
+          // end: "bottom center",
+          pin: true,
+          // pinSpacing: true,
+          scrub: 1,
+          yoyo: true,
+          toggleActions: "play none restart none",
+          // markers: true,
+          id: "s01",
+        },
+      });
+
+      s01ani.fromTo(
+        ".section01 video",
+        {
+          clipPath: "circle(0.5% at 50% 50%)",
+        },
+        {
+          clipPath: "circle(100% at 50% 50%)",
+          // ease: "expo.out",
+          // duration: 3,
+        }
+      );
+
+      // Section02 : Brand-Main
+      const s02ani = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".section02",
+          start: () => "window.innerHeight",
+          end: "+=2000",
+          pin: true,
+          // scrub: 1,
+          toggleActions: "play none restart none",
+          // markers: true,
+          id: "s02",
+        },
+      });
+
+      s02ani.fromTo(
+        ".section02 .s02-title-g",
+        {
+          x: -200,
+          opacity: 0,
+        },
+        {
+          x: 0,
+          opacity: 1,
+          ease: "expo.out",
+          duration: 1.2,
+        }
+      );
+
+      s02ani.fromTo(
+        ".section02 video",
+        { y: 500, opacity: 0 },
+        { y: 0, duration: 1.5, ease: "expo.out", opacity: 1 },
+        "<"
+      );
+
+      s02ani.fromTo(
+        "#s2-gopro path",
+        {
+          strokeDasharray: 914,
+          strokeDashoffset: 914,
+        },
+        {
+          duration: 1.4,
+          ease: "sine.inOut",
+          strokeDashoffset: 0,
+        },
+        0.4
+      );
+
+      s02ani.fromTo(
+        "#s2-gopro",
+        {
+          fill: "transparent",
+        },
+        {
+          duration: 2,
+          ease: "back.out",
+          fill: "#f8f8f8",
+        },
+        1.2
+      );
+
+      // Section03 : Brand-Detail
+      const s03ani = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".section03",
+          start: () => "window.innerHeight",
+          end: "+=2000",
+          pin: true,
+          // scrub: 1,
+          toggleActions: "play none restart none",
+          // markers: true,
+          id: "s03-1",
+        },
+      });
+
+      s03ani.fromTo(
+        ".section03 .s03-title-g01",
+        {
+          y: -200,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          ease: "expo.out",
+          duration: 2,
+        }
+      );
+
+      s03ani.fromTo(
+        "#s3-exper path",
+        {
+          strokeDasharray: 914,
+          strokeDashoffset: 914,
+        },
+        {
+          duration: 1.4,
+          ease: "sine.inOut",
+          strokeDashoffset: 0,
+        },
+        0.4
+      );
+
+      s03ani.fromTo(
+        "#s3-exper",
+        {
+          fill: "transparent",
+        },
+        {
+          duration: 2,
+          ease: "back.out",
+          fill: "#f8f8f8",
+        },
+        1.2
+      );
+
+      const s03aniO = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".section03",
+          start: "center center",
+          // end: "+=1500",
+          // pin: true,
+          scrub: true,
+          toggleActions: "play none restart none",
+          // markers: true,
+          id: "s03-circle",
+        },
+      });
+
+      s03aniO.fromTo(
+        ".section03 .turned-line",
+        {
+          y: 0,
+        },
+        {
+          y: 720,
+        },
+        "+="
+      );
+
+      // s03aniO.fromTo(
+      //   ".section03 .s03-title-g02",
+      //   {
+      //     opacity: 0,
+      //     y: 720,
+      //   },
+      //   { opactiy: 1, y: 0 }
+      // );
+
+      const s03aniT = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".section03",
+          start: "center top",
+          end: "+=2000",
+          pin: true,
+          // scrub: 1,
+          toggleActions: "play none restart none",
+          // markers: true,
+          id: "s03-2",
+        },
+      });
+
+      s03aniT.fromTo(
+        ".section03 .s03-title-g02",
+        {
+          y: 200,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          ease: "expo.out",
+          duration: 2,
+        }
+      );
+
+      s03aniT.fromTo(
+        "#s3-posit path",
+        {
+          strokeDasharray: 914,
+          strokeDashoffset: 914,
+        },
+        {
+          duration: 1.4,
+          ease: "sine.inOut",
+          strokeDashoffset: 0,
+        },
+        0.4
+      );
+
+      s03aniT.fromTo(
+        "#s3-posit",
+        {
+          fill: "transparent",
+        },
+        {
+          duration: 2,
+          ease: "back.out",
+          fill: "#f8f8f8",
+        },
+        1.2
+      );
+
+      // Section04 : Cam-Intro-Video
+      const s04ani = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".section04",
+          start: () => "window.innerHeight",
+          pin: true,
+          // scrub: 1,
+          toggleActions: "play none restart none",
+          // markers: true,
+          id: "s04",
+        },
+      });
+
+      // section05: Cam-Main
+      const s05ani = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".section05",
+          start: () => "window.innerHeight",
+          pin: true,
+          // scrub: 1,
+          toggleActions: "play none restart none",
+          markers: true,
+          id: "s05",
+        },
+      });
+
+      s05ani.fromTo(
+        ".section05 .img01 img",
+        {
+          opacity: 0,
+          y: 200,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          ease: "expo.out",
+          duration: 2,
+        }
+      );
+
+      s05ani.fromTo(
+        ".section05 .s05-title-g01",
+        {
+          x: -200,
+          opacity: 0,
+        },
+        {
+          x: 0,
+          opacity: 1,
+          ease: "expo.out",
+          duration: 1.2,
+        },
+        "<"
+      );
+
+      s05ani.fromTo(
+        ".section05 .s05-title-g02",
+        {
+          x: 200,
+          opacity: 0,
+        },
+        {
+          x: 0,
+          opacity: 1,
+          ease: "expo.out",
+          duration: 0.6,
+        },
+        0.1
+      );
+
+      // S6-Horizontal Container
+      let s6Sections = gsap.utils.toArray(".panel");
+
+      gsap.to(s6Sections, {
+        xPercent: -100 * (s6Sections.length - 1),
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".s6-container",
+          pin: true,
+          scrub: 1,
+          markers: true,
+          id: "가로",
+          snap: 1 / (s6Sections.length - 1),
+          end: () => "+=" + document.querySelector(".s6-container").offsetWidth,
+        },
+      });
+
+      // Section06 : Cam-Detail-01 : 5.3K
+      // const s06ani = gsap.timeline({
+      //   scrollTrigger: {
+      //     trigger: ".section06",
+      //     start: () => "window.innerHeight",
+      //     // end: "+=2000",
+      //     // pin: true,
+      //     scrub: 1,
+      //     toggleActions: "play none restart none",
+      //     markers: true,
+      //     id: "5.3k",
+      //   },
+      // });
+
+      // s06ani.fromTo(
+      //   ".section06 video",
+      //   {
+      //     scale: 0.8,
+      //   },
+      //   {
+      //     scale: 1,
+      //   }
+      // );
+
+      // s06ani.fromTo(
+      //   ".section06 .s6-title-g",
+      //   {
+      //     opacity: 0,
+      //   },
+      //   {
+      //     opacity: 1,
+      //   },
+      //   0.6
+      // );
+
       // Section07 : Cam-Detail-02 : LargerSensor
       const s07ani = gsap.timeline({
         scrollTrigger: {
@@ -38,6 +392,13 @@ document.addEventListener("DOMContentLoaded", function () {
         },
       });
 
+      let s7TextGroup = document.querySelector(".section07 .s7-text-group");
+
+      gsap.to(s7TextGroup, {
+        y: () => -(window.scrollY * 0.1), // .s7-text-group의 스크롤 속도 느리게
+        ease: "sine.out",
+      });
+
       s07ani.fromTo(
         ".section07",
         {
@@ -48,7 +409,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       );
       s07ani.to(".section07 .s7-text-group", {
-        scrub: true,
+        scrub: 3,
         y: -2760,
       });
 
@@ -200,6 +561,7 @@ document.addEventListener("DOMContentLoaded", function () {
         scrollTrigger: {
           trigger: ".section09",
           start: () => "window.innerHeight",
+          end: "+=2000",
           pin: true,
           scrub: 1,
           toggleActions: "play none restart none",
@@ -239,10 +601,10 @@ document.addEventListener("DOMContentLoaded", function () {
         scrollTrigger: {
           trigger: ".section10",
           start: () => "window.innerHeight",
-          // pin: true,
+          pin: true,
           scrub: 1,
           toggleActions: "play none restart none",
-          // markers: true,
+          markers: true,
           id: "s10",
         },
       });
@@ -255,7 +617,7 @@ document.addEventListener("DOMContentLoaded", function () {
           pin: true,
           scrub: 1,
           toggleActions: "play none restart none",
-          markers: true,
+          // markers: true,
           id: "s11",
         },
       });
@@ -268,7 +630,7 @@ document.addEventListener("DOMContentLoaded", function () {
           pin: true,
           // scrub: 1,
           toggleActions: "play none none none",
-          markers: true,
+          // markers: true,
           id: "s12",
         },
       });
@@ -331,7 +693,7 @@ document.addEventListener("DOMContentLoaded", function () {
           // pin: true,
           scrub: 2,
           toggleActions: "play none restart none",
-          markers: true,
+          // markers: true,
           id: "s12-렌즈",
         },
       });
@@ -368,7 +730,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "<"
       );
 
-      // section14
+      // Section14 : Lens-Detail-02 : Wide4K 마지막 (Horizon START)
       const s14ani = gsap.timeline({
         scrollTrigger: {
           trigger: ".section14",
@@ -399,7 +761,25 @@ document.addEventListener("DOMContentLoaded", function () {
         "<"
       );
 
-      // section17
+      // S15-Horizontal Container
+      let s15Sections = gsap.utils.toArray(".panel02");
+
+      gsap.to(s15Sections, {
+        xPercent: -100 * (s15Sections.length - 1),
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".s15-container",
+          pin: true,
+          scrub: 1,
+          markers: true,
+          id: "가로",
+          snap: 1 / (s15Sections.length - 1),
+          end: () =>
+            "+=" + document.querySelector(".s15-container").offsetWidth,
+        },
+      });
+
+      // Section17 : Lens-Detail-04 : Smaller
       const s17ani = gsap.timeline({
         scrollTrigger: {
           trigger: ".section17",
@@ -465,6 +845,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         1.4
       );
+
       s17ani.fromTo(
         "#lighter",
         {
